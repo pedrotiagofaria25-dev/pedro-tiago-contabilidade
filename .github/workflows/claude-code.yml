@@ -1,0 +1,41 @@
+name: Claude Code
+
+on:
+  issues:
+    types: [opened, edited]
+  issue_comment:
+    types: [created, edited]
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+  pull_request_review_comment:
+    types: [created, edited]
+
+jobs:
+  claude-code:
+    runs-on: ubuntu-latest
+    if: contains(github.event.comment.body, '@claude') || contains(github.event.issue.body, '@claude') || contains(github.event.pull_request.body, '@claude')
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Claude Code
+        uses: anthropics/claude-code-action@main
+        with:
+          claude_api_key: ${{ secrets.CLAUDE_API_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Comment on issue/PR
+        if: success()
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const issue_number = context.issue.number || context.payload.pull_request.number;
+            if (issue_number) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue_number,
+                body: '✅ Claude Code executado com sucesso!'
+              });
+            }
