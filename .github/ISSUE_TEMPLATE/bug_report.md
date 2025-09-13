@@ -1,37 +1,32 @@
 ---
-name: Bug Report
-about: Criar um relatório de bug para nos ajudar a melhorar
+name: Relatório de Bug
+about: Crie um relatório para nos ajudar a melhorar
 title: '[BUG] '
 labels: 'bug'
-assignees: 'pedrotiagofaria25-dev'
+assignees: ''
+
 ---
 
-## 🐛 Descrição do Bug
-Descrição clara e concisa do bug encontrado.
+**Descreva o bug**
+Uma descrição clara e concisa do que é o bug.
 
-## 🔄 Como Reproduzir
+**Para Reproduzir**
 Passos para reproduzir o comportamento:
 1. Vá para '...'
-2. Clique em '...'
-3. Role até '...'
+2. Clique em '....'
+3. Role até '....'
 4. Veja o erro
 
-## ✅ Comportamento Esperado
-Descrição clara e concisa do que deveria acontecer.
+**Comportamento esperado**
+Uma descrição clara e concisa do que você esperava que acontecesse.
 
-## 📱 Ambiente
-- Sistema Operacional: [ex: Windows 10]
-- Navegador: [ex: Chrome, Firefox]
-- Versão: [ex: 22]
+**Screenshots**
+Se aplicável, adicione screenshots para ajudar a explicar seu problema.
 
-## 📎 Informações Adicionais
-Adicione quaisquer outras informações ou screenshots sobre o problema.
+**Ambiente:**
+ - OS: [ex: Windows 11]
+ - Browser: [ex: Chrome, Edge]
+ - Versão: [ex: 22]
 
-## 🎯 Impacto
-- [ ] Baixo - Problema cosmético
-- [ ] Médio - Funcionalidade afetada
-- [ ] Alto - Sistema indisponível
-
----
-**Pedro Tiago Contabilidade - CRC GO-027770/O**
-Soluções Contábeis Inteligentes e Automatizadas
+**Contexto adicional**
+Adicione qualquer outro contexto sobre o problema aqui.
