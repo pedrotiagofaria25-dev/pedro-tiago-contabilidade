@@ -1,0 +1,189 @@
+# Pedro Tiago Contabilidade - Claude Code Integration
+# Arquivo .gitignore para segurança e organização
+
+# ========================================
+# ARQUIVOS DE CONFIGURAÇÃO SENSÍVEIS
+# ========================================
+.env
+.env.local
+.env.production
+.env.development
+config/local-*.js
+secrets/
+credentials/
+
+# ========================================
+# DEPENDÊNCIAS E BUILDS
+# ========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+dist/
+build/
+
+# ========================================
+# DADOS SENSÍVEIS E LOGS
+# ========================================
+logs/
+data/
+backups/
+temp/
+*.log
+*.log.*
+
+# Manter estrutura mas ignorar conteúdo
+!logs/.gitkeep
+!data/.gitkeep
+!backups/.gitkeep
+
+# ========================================
+# RESULTADOS E RELATÓRIOS
+# ========================================
+reports/
+results/
+outputs/
+downloads/
+
+# Manter estrutura
+!reports/.gitkeep
+!results/.gitkeep
+
+# ========================================
+# ARQUIVOS DE SISTEMA
+# ========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ========================================
+# IDEs E EDITORES
+# ========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ========================================
+# PUPPETEER E BROWSER
+# ========================================
+.puppeteerrc.cjs
+.puppeteer-cache/
+chromium/
+
+# ========================================
+# CACHE E TEMPORÁRIOS
+# ========================================
+.cache/
+.tmp/
+.temp/
+cache/
+*.tmp
+*.temp
+
+# ========================================
+# ARQUIVOS DE BACKUP E VERSÕES
+# ========================================
+*.bak
+*.backup
+*.orig
+*.rej
+
+# ========================================
+# ARQUIVOS DE TESTE
+# ========================================
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+test-screenshots/
+
+# ========================================
+# ARQUIVOS ESPECÍFICOS DO PROJETO
+# ========================================
+# Screenshots capturadas durante automação
+screenshots/
+session-data/
+
+# Arquivos CSV/Excel temporários
+*.csv.tmp
+*.xlsx.tmp
+
+# Certificados e chaves
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# ========================================
+# CONFIGURAÇÕES LOCAIS
+# ========================================
+local-config.json
+user-settings.json
+personal-notes.md
+
+# ========================================
+# DADOS DE CLIENTES (SENSÍVEL)
+# ========================================
+client-data/
+customer-info/
+fiscal-documents/
+financial-reports/
+
+# ========================================
+# ARQUIVOS DE MONITORAMENTO
+# ========================================
+monitoring-data/
+health-checks/
+performance-logs/
+
+# ========================================
+# UPLOADS E DOWNLOADS
+# ========================================
+uploads/
+downloads/
+attachments/
+
+# ========================================
+# DOCUMENTOS ESPECÍFICOS
+# ========================================
+# Manter templates mas não documentos gerados
+templates/generated/
+documents/generated/
+
+# ========================================
+# CONFIGURAÇÕES DE AMBIENTE
+# ========================================
+.envrc
+.env.*.local
+
+# ========================================
+# LOCK FILES (OPCIONAL)
+# ========================================
+# Descomente se quiser ignorar lock files
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ========================================
+# NOTAS IMPORTANTES
+# ========================================
+# Este arquivo protege informações sensíveis da
+# Pedro Tiago Contabilidade incluindo:
+# - Credenciais de sistemas contábeis
+# - Dados de clientes
+# - Chaves de API
+# - Logs com informações pessoais
+# - Relatórios confidenciais
+#
+# NUNCA adicione arquivos com dados reais
+# ao controle de versão!
+# ========================================
