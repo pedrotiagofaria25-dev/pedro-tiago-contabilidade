@@ -1,29 +1,19 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "version": 2,
-  "builds": [
-    {
-      "src": "site-pedro-tiago-contabilidade/**",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/site-pedro-tiago-contabilidade/$1"
-    }
-  ],
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "https://www.pedrotiagocontabilidade.com.br",
-      "permanent": true,
-      "statusCode": 301
-    },
+  "buildCommand": "echo 'Site estático pronto'",
+  "outputDirectory": "./",
+  "public": true,
+  "functions": {},
+  "headers": [
     {
       "source": "/(.*)",
-      "destination": "https://www.pedrotiagocontabilidade.com.br/$1",
-      "permanent": true,
-      "statusCode": 301
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, must-revalidate"
+        }
+      ]
     }
   ]
 }
