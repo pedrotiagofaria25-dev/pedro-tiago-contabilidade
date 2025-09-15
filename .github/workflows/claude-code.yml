@@ -1,0 +1,80 @@
+name: Claude Code
+
+on:
+  issues:
+    types: [opened, edited]
+  issue_comment:
+    types: [created, edited]
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+  pull_request_review_comment:
+    types: [created, edited]
+  workflow_dispatch:
+    inputs:
+      prompt:
+        description: 'Prompt para o Claude'
+        required: false
+        default: 'Review and improve this code'
+
+jobs:
+  claude-code:
+    runs-on: ubuntu-latest
+    if: |
+      github.event_name == 'workflow_dispatch' ||
+      contains(github.event.comment.body, '@claude') ||
+      contains(github.event.issue.body, '@claude') ||
+      contains(github.event.pull_request.body, '@claude')
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Run Claude Code
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.CLAUDE_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Determinar o prompt baseado no evento
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            PROMPT="${{ github.event.inputs.prompt }}"
+          elif [ "${{ github.event_name }}" == "issue_comment" ] || [ "${{ github.event_name }}" == "pull_request_review_comment" ]; then
+            PROMPT="${{ github.event.comment.body }}"
+          elif [ "${{ github.event_name }}" == "issues" ]; then
+            PROMPT="${{ github.event.issue.body }}"
+          elif [ "${{ github.event_name }}" == "pull_request" ]; then
+            PROMPT="${{ github.event.pull_request.body }}"
+          else
+            PROMPT="Review this code and suggest improvements"
+          fi
+
+          # Executar Claude com permissões adequadas
+          claude \
+            -p "$PROMPT" \
+            --permission-mode acceptEdits \
+            --allowedTools "Bash(*) Read(*) Edit(*) Write(*) Grep(*) Glob(*)" \
+            --debug || true
+
+      - name: Comment on issue/PR
+        if: success() && (github.event_name == 'issues' || github.event_name == 'pull_request')
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue_number = context.issue.number || context.payload.pull_request.number;
+            if (issue_number) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue_number,
+                body: '✅ Claude Code executado com sucesso! Verifique as mudanças acima.'
+              });
+            }

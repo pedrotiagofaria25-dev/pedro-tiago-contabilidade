@@ -1,0 +1,46 @@
+# Pedro Tiago Contabilidade - Requirements
+# Dependências para sistemas contábeis automatizados
+
+# Core frameworks
+flask>=2.3.3
+fastapi>=0.104.1
+django>=4.2.7
+
+# Database
+sqlalchemy>=2.0.23
+psycopg2-binary>=2.9.9
+pymongo>=4.6.0
+
+# Data processing
+pandas>=2.1.3
+numpy>=1.24.4
+openpyxl>=3.1.2
+xlsxwriter>=3.1.9
+
+# APIs e integrações
+requests>=2.31.0
+httpx>=0.25.2
+pydantic>=2.5.0
+
+# Autenticação e segurança
+cryptography>=41.0.7
+pyjwt>=2.8.0
+bcrypt>=4.1.2
+
+# Utilidades
+python-dotenv>=1.0.0
+click>=8.1.7
+rich>=13.7.0
+typer>=0.9.0
+
+# Desenvolvimento
+pytest>=7.4.3
+black>=23.11.0
+flake8>=6.1.0
+isort>=5.12.0
+mypy>=1.7.1
+
+# Deploy e monitoramento
+gunicorn>=21.2.0
+uvicorn>=0.24.0
+prometheus-client>=0.19.0
