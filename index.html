@@ -3,170 +3,396 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- SEO Meta Tags -->
-    <title>Pedro Tiago Contabilidade - Contador CRC GO-027770/O | Serviços Contábeis Online para Todo Brasil</title>
-    <meta name="description" content="Contador autônomo Pedro Tiago CRC GO-027770/O oferece serviços contábeis digitais para todo Brasil. Atendimento 100% online via WhatsApp. Solicite seu orçamento!">
-    <meta name="keywords" content="contador online, contabilidade digital, serviços contábeis, contador Goiânia, CRC GO-027770/O, Pedro Tiago, contabilidade pessoa física, contabilidade pessoa jurídica, contador autônomo">
-    <meta name="author" content="Pedro Tiago Contabilidade">
-    <meta name="robots" content="index, follow">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Pedro Tiago Contabilidade - Contador CRC GO-027770/O">
-    <meta property="og:description" content="Serviços contábeis digitais para todo Brasil. Atendimento 100% online via WhatsApp.">
-    <meta property="og:url" content="https://www.pedrotiagocontabilidade.com.br">
-    <meta property="og:image" content="https://www.pedrotiagocontabilidade.com.br/assets/og-image.jpg">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Pedro Tiago Contabilidade - Contador CRC GO-027770/O">
-    <meta name="twitter:description" content="Serviços contábeis digitais para todo Brasil. Atendimento 100% online via WhatsApp.">
-    <meta name="twitter:image" content="https://www.pedrotiagocontabilidade.com.br/assets/og-image.jpg">
-
-    <!-- Favicons -->
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-
-    <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "AccountingService",
-        "name": "Pedro Tiago Contabilidade",
-        "description": "Contador autônomo oferecendo serviços contábeis digitais para todo Brasil",
-        "url": "https://www.pedrotiagocontabilidade.com.br",
-        "telephone": "+5562999948445",
-        "email": "pedrotiago@pedrotiagocontabilidade.com.br",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Goiânia",
-            "addressRegion": "GO",
-            "addressCountry": "BR"
-        },
-        "founder": {
-            "@type": "Person",
-            "name": "Pedro Tiago",
-            "jobTitle": "Contador CRC GO-027770/O"
-        },
-        "areaServed": "BR",
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Serviços Contábeis",
-            "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Contabilidade Pessoa Física"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Contabilidade Pessoa Jurídica"
-                    }
-                }
-            ]
+    <title>Pedro Tiago Contabilidade - Contador CRC GO-027770/O</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-    }
-    </script>
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
-    </script>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-    <!-- Preload Critical Resources -->
-    <link rel="preload" href="styles.css" as="style">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        /* Header */
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .logo span {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .header-contact {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: white;
+            text-align: center;
+            padding: 150px 0 100px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #25D366;
+            color: white;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-primary:hover, .btn-secondary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .trust-indicators {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            opacity: 0.9;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 100px 0;
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(45deg, #3498db, #2c3e50);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .service-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .service-card ul {
+            list-style: none;
+            text-align: left;
+        }
+
+        .service-card li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .service-card li:before {
+            content: "✓ ";
+            color: #25D366;
+            font-weight: bold;
+        }
+
+        /* About Section */
+        .about {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            color: #2c3e50;
+            margin-bottom: 2rem;
+        }
+
+        .credentials {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .credential {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            flex: 1;
+        }
+
+        .credential strong {
+            color: #2c3e50;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 100px 0;
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 2rem;
+        }
+
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .contact-item {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-item h3 {
+            margin-bottom: 1rem;
+            color: #25D366;
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-item a:hover {
+            color: #25D366;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a252f;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* WhatsApp Float */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+        }
+
+        .whatsapp-float a {
+            display: flex;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .about-content { grid-template-columns: 1fr; }
+            .header-content { flex-direction: column; gap: 1rem; }
+            .cta-buttons { flex-direction: column; align-items: center; }
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="container">
-                <div class="nav-brand">
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
                     <h1>Pedro Tiago Contabilidade</h1>
-                    <span class="crc">CRC GO-027770/O</span>
+                    <span>CRC GO-027770/O</span>
                 </div>
-                <div class="nav-menu">
-                    <a href="#inicio" class="nav-link">Início</a>
-                    <a href="#servicos" class="nav-link">Serviços</a>
-                    <a href="#sobre" class="nav-link">Sobre</a>
-                    <a href="#contato" class="nav-link">Contato</a>
-                </div>
-                <div class="nav-contact">
+                <div class="header-contact">
                     <a href="https://wa.me/5562999948445" class="whatsapp-btn" target="_blank">
-                        <i class="fab fa-whatsapp"></i> WhatsApp
+                        📱 WhatsApp
                     </a>
                 </div>
             </div>
-        </nav>
+        </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="inicio" class="hero">
+    <section class="hero">
         <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Contador Autônomo CRC GO-027770/O<br>
-                    <span class="highlight">Atendimento 100% Digital</span>
-                </h1>
-                <p class="hero-description">
-                    Serviços contábeis profissionais para todo o Brasil. Atendimento personalizado via WhatsApp e email. Solicite seu orçamento sem compromisso!
-                </p>
-                <div class="hero-cta">
-                    <a href="https://wa.me/5562999948445?text=Olá! Gostaria de solicitar um orçamento para serviços contábeis." class="btn-primary" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Solicitar Orçamento
-                    </a>
-                    <a href="mailto:pedrotiago@pedrotiagocontabilidade.com.br" class="btn-secondary">
-                        <i class="fas fa-envelope"></i> Enviar Email
-                    </a>
+            <h1>Contador Autônomo CRC GO-027770/O</h1>
+            <p>Serviços contábeis profissionais para todo o Brasil. Atendimento 100% digital via WhatsApp e email. Solicite seu orçamento sem compromisso!</p>
+
+            <div class="cta-buttons">
+                <a href="https://wa.me/5562999948445?text=Olá! Gostaria de solicitar um orçamento para serviços contábeis."
+                   class="btn-primary" target="_blank">
+                    📱 Solicitar Orçamento
+                </a>
+                <a href="mailto:pedrotiago@pedrotiagocontabilidade.com.br" class="btn-secondary">
+                    ✉️ Enviar Email
+                </a>
+            </div>
+
+            <div class="trust-indicators">
+                <div class="trust-item">
+                    <span>🛡️ Contador Registrado CRC</span>
                 </div>
-                <div class="hero-trust">
-                    <div class="trust-item">
-                        <i class="fas fa-shield-alt"></i>
-                        <span>Contador Registrado CRC</span>
-                    </div>
-                    <div class="trust-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Todo Brasil</span>
-                    </div>
-                    <div class="trust-item">
-                        <i class="fas fa-clock"></i>
-                        <span>Atendimento Rápido</span>
-                    </div>
+                <div class="trust-item">
+                    <span>🌎 Todo Brasil</span>
+                </div>
+                <div class="trust-item">
+                    <span>⚡ Atendimento Rápido</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="servicos" class="services">
+    <section class="services">
         <div class="container">
-            <div class="section-header">
+            <div class="section-title">
                 <h2>Serviços Contábeis</h2>
                 <p>Soluções completas em contabilidade para pessoas físicas e jurídicas</p>
             </div>
+
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-user"></i>
-                    </div>
+                    <div class="service-icon">👤</div>
                     <h3>Pessoa Física</h3>
                     <ul>
                         <li>Declaração de Imposto de Renda</li>
@@ -175,10 +401,9 @@
                         <li>Organização Financeira</li>
                     </ul>
                 </div>
+
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
+                    <div class="service-icon">🏢</div>
                     <h3>Pessoa Jurídica</h3>
                     <ul>
                         <li>Abertura de Empresa</li>
@@ -187,10 +412,9 @@
                         <li>Obrigações Fiscais</li>
                     </ul>
                 </div>
+
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-calculator"></i>
-                    </div>
+                    <div class="service-icon">📊</div>
                     <h3>Consultoria</h3>
                     <ul>
                         <li>Análise Financeira</li>
@@ -204,212 +428,109 @@
     </section>
 
     <!-- About Section -->
-    <section id="sobre" class="about">
+    <section class="about">
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
                     <h2>Pedro Tiago - Contador CRC GO-027770/O</h2>
-                    <p>
-                        Contador autônomo com sede em Goiânia-GO, oferecendo serviços contábeis digitais para todo o Brasil.
-                        Especializado em atendimento personalizado e soluções eficientes para pessoas físicas e jurídicas.
-                    </p>
+                    <p>Contador autônomo com sede em Goiânia-GO, oferecendo serviços contábeis digitais para todo o Brasil. Especializado em atendimento personalizado e soluções eficientes para pessoas físicas e jurídicas.</p>
+
                     <div class="credentials">
                         <div class="credential">
-                            <i class="fas fa-certificate"></i>
-                            <div>
-                                <strong>CRC GO-027770/O</strong>
-                                <span>Contador Registrado</span>
-                            </div>
+                            <strong>CRC GO-027770/O</strong>
+                            <span>Contador Registrado</span>
                         </div>
                         <div class="credential">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <strong>Goiânia - GO</strong>
-                                <span>Atendimento Nacional</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-methods">
-                        <h3>Como nos comunicamos:</h3>
-                        <div class="method">
-                            <i class="fab fa-whatsapp"></i>
-                            <span>WhatsApp: (62) 99994-8445</span>
-                        </div>
-                        <div class="method">
-                            <i class="fas fa-envelope"></i>
-                            <span>Email: pedrotiago@pedrotiagocontabilidade.com.br</span>
+                            <strong>Goiânia - GO</strong>
+                            <span>Atendimento Nacional</span>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Precisa de Serviços Contábeis?</h2>
-                <p>Entre em contato agora mesmo e solicite seu orçamento personalizado!</p>
-                <div class="cta-buttons">
-                    <a href="https://wa.me/5562999948445?text=Olá Pedro Tiago! Gostaria de solicitar um orçamento para serviços contábeis." class="btn-primary" target="_blank">
-                        <i class="fab fa-whatsapp"></i> WhatsApp: (62) 99994-8445
-                    </a>
-                    <a href="mailto:pedrotiago@pedrotiagocontabilidade.com.br?subject=Solicitação de Orçamento&body=Olá Pedro Tiago, gostaria de solicitar um orçamento para serviços contábeis." class="btn-secondary">
-                        <i class="fas fa-envelope"></i> Enviar Email
-                    </a>
+                <div class="about-image">
+                    <h3>Como nos comunicamos:</h3>
+                    <p><strong>📱 WhatsApp:</strong> (62) 99994-8445</p>
+                    <p><strong>✉️ Email:</strong> pedrotiago@pedrotiagocontabilidade.com.br</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contato" class="contact">
+    <section class="contact">
         <div class="container">
-            <div class="section-header">
-                <h2>Contato</h2>
-                <p>Entre em contato para esclarecer dúvidas ou solicitar orçamento</p>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fab fa-whatsapp"></i>
-                        <div>
-                            <h3>WhatsApp</h3>
-                            <p>(62) 99994-8445</p>
-                            <a href="https://wa.me/5562999948445" target="_blank">Enviar mensagem</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email Comercial</h3>
-                            <p>pedrotiago@pedrotiagocontabilidade.com.br</p>
-                            <a href="mailto:pedrotiago@pedrotiagocontabilidade.com.br">Enviar email</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Localização</h3>
-                            <p>Goiânia - GO</p>
-                            <span>Atendimento em todo Brasil</span>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-certificate"></i>
-                        <div>
-                            <h3>Registro Profissional</h3>
-                            <p>CRC GO-027770/O</p>
-                            <span>Contador Autônomo</span>
-                        </div>
-                    </div>
+            <h2>Entre em Contato</h2>
+            <p>Precisa de serviços contábeis? Entre em contato agora mesmo!</p>
+
+            <div class="contact-methods">
+                <div class="contact-item">
+                    <h3>📱 WhatsApp</h3>
+                    <p>(62) 99994-8445</p>
+                    <a href="https://wa.me/5562999948445" target="_blank">Enviar mensagem</a>
                 </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="nome">Nome Completo</label>
-                            <input type="text" id="nome" name="nome" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="telefone">Telefone/WhatsApp</label>
-                            <input type="tel" id="telefone" name="telefone" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="servico">Tipo de Serviço</label>
-                            <select id="servico" name="servico" required>
-                                <option value="">Selecione um serviço</option>
-                                <option value="pessoa-fisica">Pessoa Física</option>
-                                <option value="pessoa-juridica">Pessoa Jurídica</option>
-                                <option value="consultoria">Consultoria</option>
-                                <option value="outros">Outros</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva suas necessidades..."></textarea>
-                        </div>
-                        <button type="submit" class="btn-primary">
-                            <i class="fas fa-paper-plane"></i> Enviar Mensagem
-                        </button>
-                    </form>
+
+                <div class="contact-item">
+                    <h3>✉️ Email</h3>
+                    <p>pedrotiago@pedrotiagocontabilidade.com.br</p>
+                    <a href="mailto:pedrotiago@pedrotiagocontabilidade.com.br">Enviar email</a>
+                </div>
+
+                <div class="contact-item">
+                    <h3>📍 Localização</h3>
+                    <p>Goiânia - GO</p>
+                    <span>Atendimento em todo Brasil</span>
+                </div>
+
+                <div class="contact-item">
+                    <h3>🏆 Registro</h3>
+                    <p>CRC GO-027770/O</p>
+                    <span>Contador Autônomo</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-main">
-                    <h3>Pedro Tiago Contabilidade</h3>
-                    <p>CRC GO-027770/O</p>
-                    <p>Contador Autônomo - Serviços Digitais para Todo Brasil</p>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contato</h4>
-                    <p><i class="fab fa-whatsapp"></i> (62) 99994-8445</p>
-                    <p><i class="fas fa-envelope"></i> pedrotiago@pedrotiagocontabilidade.com.br</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Goiânia - GO</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Pedro Tiago Contabilidade. Todos os direitos reservados.</p>
-                <p>Desenvolvido com ❤️ para oferecer os melhores serviços contábeis</p>
-            </div>
+            <p>&copy; 2025 Pedro Tiago Contabilidade - CRC GO-027770/O</p>
+            <p>Contador Autônomo - Serviços Digitais para Todo Brasil</p>
         </div>
     </footer>
 
     <!-- WhatsApp Float Button -->
     <div class="whatsapp-float">
         <a href="https://wa.me/5562999948445?text=Olá! Gostaria de falar sobre serviços contábeis." target="_blank">
-            <i class="fab fa-whatsapp"></i>
+            📱
         </a>
     </div>
 
-    <!-- Scripts -->
-    <script src="script.js"></script>
-
-    <!-- Lead Tracking -->
     <script>
-        // Track form submissions
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            // Get form data
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-
-            // Create WhatsApp message
-            const message = `Nova solicitação do site:
-Nome: ${data.nome}
-Email: ${data.email}
-Telefone: ${data.telefone}
-Serviço: ${data.servico}
-Mensagem: ${data.mensagem}`;
-
-            // Redirect to WhatsApp
-            const whatsappUrl = `https://wa.me/5562999948445?text=${encodeURIComponent(message)}`;
-            window.open(whatsappUrl, '_blank');
-
-            // Show success message
-            alert('Redirecionando para WhatsApp...');
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
         });
 
-        // Track clicks for analytics
-        function trackClick(action) {
-            if (typeof gtag !== 'undefined') {
-                gtag('event', 'click', {
-                    'event_category': 'engagement',
-                    'event_label': action
-                });
-            }
-        }
+        // Track clicks
+        document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+            link.addEventListener('click', function() {
+                console.log('WhatsApp clicked:', this.href);
+            });
+        });
+
+        document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
+            link.addEventListener('click', function() {
+                console.log('Email clicked:', this.href);
+            });
+        });
     </script>
 </body>
-</html><!-- Deploy forçado seg, 15 de set de 2025 12:20:23 -->
+</html>
