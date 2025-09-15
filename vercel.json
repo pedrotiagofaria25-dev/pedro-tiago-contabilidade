@@ -1,12 +1,29 @@
 {
   "version": 2,
-  "name": "pedro-tiago-contabilidade",
   "builds": [
     {
-      "src": "**/*",
+      "src": "site-pedro-tiago-contabilidade/**",
       "use": "@vercel/static"
     }
   ],
-  "cleanUrls": true,
-  "trailingSlash": false
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/site-pedro-tiago-contabilidade/$1"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://www.pedrotiagocontabilidade.com.br",
+      "permanent": true,
+      "statusCode": 301
+    },
+    {
+      "source": "/(.*)",
+      "destination": "https://www.pedrotiagocontabilidade.com.br/$1",
+      "permanent": true,
+      "statusCode": 301
+    }
+  ]
 }
