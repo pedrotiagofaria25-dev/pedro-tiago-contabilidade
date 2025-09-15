@@ -1,10 +1,6 @@
 {
   "version": 2,
   "name": "pedro-tiago-contabilidade",
-  "alias": [
-    "www.pedrotiagocontabilidade.com.br",
-    "pedrotiagocontabilidade.com.br"
-  ],
   "builds": [
     {
       "src": "index.html",
@@ -27,12 +23,6 @@
       "use": "@vercel/static"
     }
   ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ],
   "headers": [
     {
       "source": "/(.*)",
@@ -52,15 +42,11 @@
         {
           "key": "Strict-Transport-Security",
           "value": "max-age=31536000; includeSubDomains"
-        },
-        {
-          "key": "Referrer-Policy",
-          "value": "strict-origin-when-cross-origin"
         }
       ]
     },
     {
-      "source": "/(.*\\.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot))",
+      "source": "/(.*\\.(js|css|png|jpg|jpeg|gif|ico|svg))",
       "headers": [
         {
           "key": "Cache-Control",
@@ -69,10 +55,6 @@
       ]
     }
   ],
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "/index.html"
-    }
-  ]
+  "cleanUrls": true,
+  "trailingSlash": false
 }
