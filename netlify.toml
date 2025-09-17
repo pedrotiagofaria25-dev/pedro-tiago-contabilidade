@@ -51,19 +51,10 @@
   directory = "functions/"
   node_bundler = "esbuild"
 
-[[plugins]]
-  package = "netlify-plugin-lighthouse"
-
-  [plugins.inputs]
-    [[plugins.inputs.audits]]
-    output_path = "lighthouse/homepage.html"
-    url = "https://pedrotiagocontabilidade.netlify.app"
-
-[[plugins]]
-  package = "@netlify/plugin-sitemap"
+# Plugins removidos para deploy simplificado
 
 [context.production]
-  command = "npm run build:production"
+  command = "npm run build"
 
 [context.branch-deploy]
   command = "npm run build:staging"
