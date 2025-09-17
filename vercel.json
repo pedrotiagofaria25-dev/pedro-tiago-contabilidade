@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "name": "pedro-tiago-contabilidade",
   "builds": [
     {
       "src": "package.json",
@@ -10,10 +9,10 @@
       }
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ],
   "headers": [

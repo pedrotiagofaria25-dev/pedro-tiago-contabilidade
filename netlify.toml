@@ -51,13 +51,15 @@
   directory = "functions/"
   node_bundler = "esbuild"
 
-[plugins]
+[[plugins]]
   package = "netlify-plugin-lighthouse"
 
-  [[plugins.inputs.audits]]
+  [plugins.inputs]
+    [[plugins.inputs.audits]]
     output_path = "lighthouse/homepage.html"
     url = "https://pedrotiagocontabilidade.netlify.app"
 
+[[plugins]]
   package = "@netlify/plugin-sitemap"
 
 [context.production]
