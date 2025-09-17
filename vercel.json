@@ -1,0 +1,65 @@
+﻿{
+    "env":  {
+                "REACT_APP_API_URL":  "https://api.pedrotiagocontabilidade.com.br",
+                "REACT_APP_SITE_URL":  "https://www.pedrotiagocontabilidade.com.br"
+            },
+    "routes":  [
+                   {
+                       "src":  "/(.*)",
+                       "dest":  "/index.html"
+                   }
+               ],
+    "headers":  [
+                    {
+                        "headers":  [
+                                        {
+                                            "key":  "X-Content-Type-Options",
+                                            "value":  "nosniff"
+                                        },
+                                        {
+                                            "key":  "X-Frame-Options",
+                                            "value":  "DENY"
+                                        },
+                                        {
+                                            "key":  "X-XSS-Protection",
+                                            "value":  "1; mode=block"
+                                        },
+                                        {
+                                            "key":  "Strict-Transport-Security",
+                                            "value":  "max-age=31536000; includeSubDomains"
+                                        }
+                                    ],
+                        "source":  "/(.*)"
+                    },
+                    {
+                        "headers":  [
+                                        {
+                                            "key":  "Cache-Control",
+                                            "value":  "public, max-age=31536000, immutable"
+                                        }
+                                    ],
+                        "source":  "/static/(.*)"
+                    }
+                ],
+    "alias":  [
+                  "pedrotiagocontabilidade.com.br",
+                  "www.pedrotiagocontabilidade.com.br"
+              ],
+    "name":  "pedro-tiago-contabilidade",
+    "version":  2,
+    "builds":  [
+                   {
+                       "config":  {
+                                      "distDir":  "dist"
+                                  },
+                       "use":  "@vercel/static-build",
+                       "src":  "package.json"
+                   }
+               ],
+    "functions":  {
+                      "api/contact.js":  {
+                                             "memory":  1024,
+                                             "maxDuration":  10
+                                         }
+                  }
+}
