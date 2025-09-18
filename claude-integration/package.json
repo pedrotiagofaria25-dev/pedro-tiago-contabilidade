@@ -1,0 +1,74 @@
+{
+  "name": "pedro-tiago-claude-integration",
+  "version": "1.0.0",
+  "description": "Sistema de integração Claude Code para automação contábil - Pedro Tiago Contabilidade",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "calima": "node examples/calima-integration.js",
+    "makro": "node examples/makrosystem-integration.js",
+    "backup": "node examples/backup-automation.js",
+    "monitor": "node examples/system-monitor.js",
+    "sync": "node examples/data-sync.js"
+  },
+  "keywords": [
+    "claude-code",
+    "contabilidade",
+    "automacao",
+    "calima",
+    "makrosystem",
+    "ai-integration"
+  ],
+  "author": {
+    "name": "Pedro Tiago",
+    "email": "pedrotiago@pedrotiagocontabilidade.com.br",
+    "url": "https://www.pedrotiagocontabilidade.com.br"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pedro-tiago/pedro-tiago-contabilidade.git"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-code": "^1.0.0",
+    "@anthropic-ai/sdk": "^0.24.2",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "commander": "^11.1.0",
+    "joi": "^17.11.0",
+    "moment": "^2.29.4",
+    "lodash": "^4.17.21",
+    "fs-extra": "^11.1.1",
+    "node-cron": "^3.0.3",
+    "winston": "^3.11.0",
+    "puppeteer": "^21.5.2",
+    "cheerio": "^1.0.0-rc.12",
+    "csv-parser": "^3.0.0",
+    "xlsx": "^0.18.5",
+    "archiver": "^6.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.7.0",
+    "eslint": "^8.54.0",
+    "prettier": "^3.1.0",
+    "@types/node": "^20.9.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "config": {
+    "company": "Pedro Tiago Contabilidade",
+    "crc": "GO-027770/O",
+    "whatsapp": "62999948445"
+  }
+}

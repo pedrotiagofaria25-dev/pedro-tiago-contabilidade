@@ -1,0 +1,32 @@
+# GitHub Pages Configuration
+# Pedro Tiago Contabilidade
+
+theme: minima
+title: Pedro Tiago Contabilidade
+description: Soluções Contábeis Inteligentes e Automatizadas - CRC GO-027770/O
+author: Pedro Tiago
+email: pedrotiago@pedrotiagocontabilidade.com.br
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Social links
+github_username: pedrotiagofaria25-dev
+whatsapp: 5562999948445
+
+# Google Analytics (adicione seu ID se tiver)
+# google_analytics: UA-XXXXXXXXX-X
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude files from build
+exclude:
+  - README.md
+  - requirements.txt
+  - "*.py"
+  - ".github/"
