@@ -34,7 +34,7 @@ function App() {
             <p>📧 pedrotiago@pedrotiagocontabilidade.com.br</p>
             <div className="contact-buttons">
               <a
-                href="https://wa.me/5562999887766?text=Olá! Gostaria de saber mais sobre os serviços de contabilidade."
+                href="https://wa.me/5562999948445?text=Olá! Gostaria de saber mais sobre os serviços de contabilidade. Encontrei seu contato no site."
                 className="whatsapp-btn"
                 target="_blank"
                 rel="noopener noreferrer"
