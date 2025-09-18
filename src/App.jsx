@@ -34,19 +34,24 @@ function App() {
             <p>📧 pedrotiago@pedrotiagocontabilidade.com.br</p>
             <div className="contact-buttons">
               <a
-                href="https://wa.me/5562999948445?text=Olá! Gostaria de saber mais sobre os serviços de contabilidade. Encontrei seu contato no site."
+                href="https://wa.me/5562999948445?text=Olá! Sou o Pedro Tiago, encontrei seu site e gostaria de conhecer melhor seus serviços de contabilidade. Pode me ajudar?"
                 className="whatsapp-btn"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                💬 WhatsApp
+                💬 WhatsApp (62) 99994-8445
               </a>
               <a
-                href="mailto:pedrotiago@pedrotiagocontabilidade.com.br"
+                href="mailto:pedrotiago@pedrotiagocontabilidade.com.br?subject=Interesse em Serviços Contábeis&body=Olá Pedro Tiago,%0D%0A%0D%0AGostaria de saber mais sobre seus serviços de contabilidade.%0D%0A%0D%0AMinha empresa/situação:%0D%0A- Ramo de atividade:%0D%0A- Porte da empresa:%0D%0A- Principais necessidades:%0D%0A%0D%0AAguardo seu retorno!%0D%0A%0D%0AAtenciosamente"
                 className="email-btn"
               >
-                📧 Email
+                📧 Email Profissional
               </a>
+            </div>
+            <div className="communication-note">
+              <p>💼 <strong>Atendimento 100% personalizado</strong></p>
+              <p>📱 Resposta rápida via WhatsApp e Email</p>
+              <p>⏰ Segunda a Sexta: 8h às 18h</p>
             </div>
           </div>
 

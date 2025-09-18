@@ -163,6 +163,25 @@
   box-shadow: 0 4px 8px rgba(234, 67, 53, 0.3);
 }
 
+.communication-note {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+.communication-note p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #FFD700;
+}
+
+.communication-note strong {
+  color: white;
+}
+
 @media (max-width: 768px) {
   .App-header {
     padding: 1rem;
