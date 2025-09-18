@@ -1,0 +1,145 @@
+# 🔧 INSTRUÇÕES COMPLETAS - ADICIONAR REGISTRO TXT DNS
+Para verificação de domínio OpenAI - www.pedrotiagocontabilidade.com.br
+
+## 📋 DADOS DO REGISTRO TXT
+
+**Registro necessário:**
+```
+Nome/Host: @
+Tipo: TXT
+Valor: openai-domain-verification=dv-26L88WpUpxA27NMDHZvQFSx3
+TTL: 3600 (1 hora)
+```
+
+---
+
+## 🚀 PASSO A PASSO NO REGISTRO.BR
+
+### **1. ACESSAR PAINEL:**
+- URL: https://registro.br/painel/
+- Login: pedrotiagofaria25@gmail.com
+- Senha: [sua senha do registro.br]
+
+### **2. NAVEGAR PARA DNS:**
+- No painel, clique em "DNS"
+- Selecione o domínio: pedrotiagocontabilidade.com.br
+- Vá para "Editar Zona DNS"
+
+### **3. ADICIONAR REGISTRO TXT:**
+```
+Campo "Nome": @
+Campo "Tipo": TXT
+Campo "Valor": openai-domain-verification=dv-26L88WpUpxA27NMDHZvQFSx3
+Campo "TTL": 3600
+```
+
+### **4. SALVAR:**
+- Clique em "Adicionar Registro"
+- Confirme as alterações
+- Aguarde confirmação de sucesso
+
+---
+
+## ⏰ TEMPO DE PROPAGAÇÃO
+
+### **Propagação esperada:**
+- Mínimo: 1-2 horas
+- Máximo: 24-48 horas
+- Média: 4-6 horas
+
+### **Como verificar se propagou:**
+1. **Via nslookup (Windows):**
+   ```cmd
+   nslookup -type=TXT pedrotiagocontabilidade.com.br
+   ```
+
+2. **Via site verificador:**
+   - https://dnschecker.org/all-dns-records-of-domain.php?query=pedrotiagocontabilidade.com.br
+   - Procurar por registros TXT
+   - Conferir se o valor aparece correto
+
+3. **Via dig (se disponível):**
+   ```bash
+   dig TXT pedrotiagocontabilidade.com.br
+   ```
+
+---
+
+## ✅ CONFIRMAÇÃO DE SUCESSO
+
+### **O que você deve ver:**
+```
+pedrotiagocontabilidade.com.br. 3600 IN TXT "openai-domain-verification=dv-26L88WpUpxA27NMDHZvQFSx3"
+```
+
+### **Quando está pronto:**
+- O registro TXT aparece na consulta DNS
+- O verificador online mostra o valor correto
+- Pode clicar em "Checar" na verificação OpenAI
+
+---
+
+## 🔧 ALTERNATIVAS (se registro.br não funcionar)
+
+### **Opção 1: Via Cloudflare (se estiver usando):**
+1. Acesse Cloudflare Dashboard
+2. Selecione o domínio
+3. Vá em "DNS" > "Records"
+4. Add record:
+   - Type: TXT
+   - Name: @
+   - Content: openai-domain-verification=dv-26L88WpUpxA27NMDHZvQFSx3
+   - TTL: Auto
+
+### **Opção 2: Via cPanel (se tiver hosting):**
+1. Login no cPanel
+2. Seção "Domínios" > "Zone Editor"
+3. Add Record:
+   - Type: TXT
+   - Name: (deixar em branco ou @)
+   - Value: openai-domain-verification=dv-26L88WpUpxA27NMDHZvQFSx3
+
+---
+
+## 🆘 RESOLUÇÃO DE PROBLEMAS
+
+### **Problema: Registro não aparece**
+- **Solução**: Aguardar mais tempo (até 48h)
+- **Verificar**: Se salvou corretamente no painel
+- **Testar**: Em diferentes verificadores DNS
+
+### **Problema: Valor incorreto**
+- **Solução**: Verificar se copiou exatamente:
+  `openai-domain-verification=dv-26L88WpUpxA27NMDHZvQFSx3`
+- **Sem espaços** antes ou depois
+- **Sem aspas** extras
+
+### **Problema: Acesso negado no registro.br**
+- **Solução**: Verificar credenciais
+- **Contato**: Suporte registro.br se necessário
+- **Alternativa**: Usar Cloudflare ou cPanel
+
+---
+
+## 📞 CONTATOS DE SUPORTE
+
+### **Registro.br:**
+- Site: https://registro.br/
+- Suporte: https://registro.br/suporte/
+- Telefone: 0800 883 1390
+
+### **Verificadores DNS úteis:**
+- https://dnschecker.org/
+- https://dns.google/query?name=pedrotiagocontabilidade.com.br&type=TXT
+- https://whatsmydns.net/
+
+---
+
+**✅ APÓS CONFIGURAR:**
+1. Aguarde propagação (1-24h)
+2. Verifique se o registro aparece
+3. Clique em "Checar" na verificação OpenAI
+4. Domínio será verificado com sucesso!
+
+**Domínio:** www.pedrotiagocontabilidade.com.br
+**Registro TXT:** openai-domain-verification=dv-26L88WpUpxA27NMDHZvQFSx3

@@ -169,43 +169,37 @@ function App() {
             </div>
           </div>
 
-          <div className="social-proof">
-            <h3>🏆 Casos de Sucesso em Goiânia</h3>
-            <div className="testimonials">
-              <div className="testimonial">
-                <p>"Reduzi 40% dos impostos da minha empresa em 6 meses. Pedro Tiago encontrou enquadramentos que eu nem sabia que existiam!"</p>
-                <div className="client">
-                  <strong>Maria Santos</strong>
-                  <span>Loja de Roupas • Goiânia</span>
-                </div>
+          <div className="credentials-section">
+            <h3>🏆 Credenciais e Diferenciais</h3>
+            <div className="credentials-grid">
+              <div className="credential-card">
+                <h4>📜 Registro Profissional</h4>
+                <p><strong>CRC GO-027770/O</strong></p>
+                <span>Conselho Regional de Contabilidade de Goiás</span>
               </div>
-              <div className="testimonial">
-                <p>"Zero multas fiscais há 2 anos. Sistema automatizado funciona perfeitamente, nunca mais me preocupo com prazos."</p>
-                <div className="client">
-                  <strong>João Silva</strong>
-                  <span>Restaurante • Aparecida de Goiânia</span>
-                </div>
+              <div className="credential-card">
+                <h4>🎯 Especialização</h4>
+                <p><strong>Contabilidade Digital</strong></p>
+                <span>Automação Fiscal e Processos Online</span>
               </div>
-              <div className="testimonial">
-                <p>"Relatórios claros que me ajudam a tomar decisões. Finalmente entendo as finanças da minha empresa!"</p>
-                <div className="client">
-                  <strong>Ana Costa</strong>
-                  <span>Clínica Odontológica • Goiânia</span>
-                </div>
+              <div className="credential-card">
+                <h4>💼 Experiência</h4>
+                <p><strong>Sistemas Integrados</strong></p>
+                <span>Calima Web • Makrosystem • SPED</span>
               </div>
             </div>
             <div className="trust-indicators">
               <div className="indicator">
-                <span className="number">50+</span>
-                <span className="label">Empresas atendidas em Goiânia</span>
+                <span className="number">2024</span>
+                <span className="label">Início das operações</span>
               </div>
               <div className="indicator">
-                <span className="number">30%</span>
-                <span className="label">Economia média em impostos</span>
+                <span className="number">100%</span>
+                <span className="label">Foco em automação</span>
               </div>
               <div className="indicator">
-                <span className="number">0</span>
-                <span className="label">Multas fiscais nos últimos 2 anos</span>
+                <span className="number">24/7</span>
+                <span className="label">Suporte via WhatsApp</span>
               </div>
             </div>
           </div>
