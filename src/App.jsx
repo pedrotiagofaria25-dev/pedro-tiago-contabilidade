@@ -32,6 +32,22 @@ function App() {
             <p>📍 Goiânia, GO - Brasil</p>
             <p>🌐 www.pedrotiagocontabilidade.com.br</p>
             <p>📧 pedrotiago@pedrotiagocontabilidade.com.br</p>
+            <div className="contact-buttons">
+              <a
+                href="https://wa.me/5562999887766?text=Olá! Gostaria de saber mais sobre os serviços de contabilidade."
+                className="whatsapp-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                💬 WhatsApp
+              </a>
+              <a
+                href="mailto:pedrotiago@pedrotiagocontabilidade.com.br"
+                className="email-btn"
+              >
+                📧 Email
+              </a>
+            </div>
           </div>
 
           <div className="tech-stack">
