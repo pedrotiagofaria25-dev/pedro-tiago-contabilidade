@@ -1,0 +1,92 @@
+===============================================
+CONFIGURAÇÃO GOOGLE ADS - PEDRO TIAGO CONTABILIDADE
+===============================================
+
+CONFIGURAÇÃO INICIAL DA CONTA:
+Tipo de conta: Experiente
+Objetivo principal: Receber mais ligações
+Objetivo secundário: Acessos ao site
+
+INFORMAÇÕES DA EMPRESA:
+Nome: Pedro Tiago Contabilidade
+Site: https://www.pedrotiagocontabilidade.com.br
+Telefone: (62) 99994-8445
+Localização: Goiânia, GO
+
+PRIMEIRA CAMPANHA RECOMENDADA:
+Nome da campanha: Contador Goiânia - Pedro Tiago
+Tipo: Pesquisa (Search)
+Orçamento diário: R$ 10,00 (R$ 300/mês)
+Estratégia de lance: Maximizar cliques
+
+PALAVRAS-CHAVE PRINCIPAIS:
+Correspondência exata []:
+- [contador goiania]
+- [contador em goiania]
+- [contabilidade goiania]
+- [escritorio contabil goiania]
+
+Correspondência de frase "":
+- "contador goiania"
+- "contabilidade digital"
+- "automação fiscal"
+- "consultor contábil"
+
+Correspondência ampla:
+- contador goiás
+- contabilidade empresa
+- consultoria fiscal
+- declaração imposto renda
+
+PALAVRAS-CHAVE NEGATIVAS:
+- gratuito
+- gratis
+- curso
+- emprego
+- vaga
+- concurso
+- faculdade
+- estagio
+
+SEGMENTAÇÃO GEOGRÁFICA:
+Local principal: Goiânia, GO
+Raio adicional: 50 km de Goiânia
+Incluir: Aparecida de Goiânia, Senador Canedo, Trindade
+
+ANÚNCIOS DE TEXTO SUGERIDOS:
+
+ANÚNCIO 1:
+Título 1: Contador em Goiânia - CRC GO-027770/O
+Título 2: Contabilidade Digital Especializada
+Título 3: Atendimento Personalizado
+Descrição 1: Modernize sua contabilidade com tecnologia. SPED, NFe, automação fiscal. Contador experiente em Goiânia.
+Descrição 2: Consultoria contábil personalizada. Calima Web, Makrosystem. Atendimento domiciliar disponível.
+
+ANÚNCIO 2:
+Título 1: Pedro Tiago Contabilidade
+Título 2: Automação Fiscal Completa
+Título 3: Contador Certificado CRC-GO
+Descrição 1: Especialista em contabilidade digital. SPED automatizado, NFe, consultoria fiscal. Goiânia e região.
+Descrição 2: Escrituração contábil, planejamento tributário. Tecnologia a serviço da sua empresa.
+
+EXTENSÕES DE ANÚNCIO:
+Extensões de local: Ativado (vinculado ao Google My Business)
+Extensões de chamada: (62) 99994-8445
+Extensões de sitelink:
+- Serviços | /servicos
+- Contato | /contato
+- Sobre | /sobre
+- WhatsApp | https://wa.me/5562999948445
+
+CONVERSÕES PARA RASTREAR:
+- Chamadas telefônicas (duração mínima 60s)
+- Cliques no WhatsApp
+- Envio de formulário de contato
+- Tempo na página > 2 minutos
+
+ORÇAMENTO MENSAL ESCALONADO:
+Mês 1: R$ 300 (teste)
+Mês 2-3: R$ 500 (otimização)
+Mês 4+: R$ 700-1000 (escala)
+
+===============================================

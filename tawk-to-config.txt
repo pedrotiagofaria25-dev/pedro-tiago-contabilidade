@@ -1,0 +1,129 @@
+===============================================
+CONFIGURAÇÃO CHAT TAWK.TO - PEDRO TIAGO CONTABILIDADE
+===============================================
+
+ACESSO ADMIN TAWK.TO:
+URL: https://dashboard.tawk.to/
+Login: Com sua conta Google (pedrotiagofaria25@gmail.com)
+Widget ID: 66ea5f1250c10f7a009fcf1b/1i7vkla8o
+
+CONFIGURAÇÕES BÁSICAS:
+Nome do widget: Pedro Tiago Contabilidade
+Cor principal: #667eea (azul do site)
+Posição: Canto inferior direito
+Idioma: Português (Brasil)
+
+MENSAGEM DE BOAS-VINDAS:
+"👋 Olá! Sou Pedro Tiago, contador CRC GO-027770/O
+
+Como posso ajudá-lo hoje?
+
+📊 Contabilidade Digital
+🤖 Automação Fiscal
+💡 Consultoria Tributária
+
+Respondo em poucos minutos!"
+
+MENSAGEM OFFLINE (Fora do horário):
+"📞 No momento estou offline
+
+⏰ Horário de atendimento:
+Segunda a Sexta: 8h às 18h
+
+📱 Para urgências:
+WhatsApp: (62) 99994-8445
+
+Deixe sua mensagem que respondo assim que retornar!"
+
+RESPOSTAS RÁPIDAS (Atalhos):
+/servicos - Lista todos os serviços
+/precos - Informações sobre valores
+/contato - Formas de contato
+/whatsapp - Link direto WhatsApp
+/horario - Horário de funcionamento
+
+CONTEÚDO DAS RESPOSTAS RÁPIDAS:
+
+/servicos:
+"Nossos serviços especializados:
+
+📊 CONTABILIDADE DIGITAL
+• Escrituração contábil
+• Balancetes mensais
+• Conciliação bancária
+
+🤖 AUTOMAÇÃO FISCAL
+• SPED Fiscal/Contábil
+• NFe/NFCe automatizadas
+• Obrigações acessórias
+
+💡 CONSULTORIA
+• Planejamento tributário
+• Regularização fiscal
+• Sistemas Calima/Makrosystem
+
+Qual te interessa mais?"
+
+/precos:
+"Os valores são personalizados conforme:
+• Porte da empresa
+• Complexidade dos serviços
+• Movimento mensal
+
+Para um orçamento preciso, preciso conhecer melhor sua necessidade.
+
+Pode me contar sobre sua empresa? 📋"
+
+/contato:
+"📞 Entre em contato:
+
+WhatsApp: (62) 99994-8445
+📧 Email: pedrotiago@pedrotiagocontabilidade.com.br
+🌐 Site: www.pedrotiagocontabilidade.com.br
+
+📍 Atendimento: Goiânia e região
+⏰ Seg-Sex: 8h às 18h"
+
+/whatsapp:
+"💬 Converse direto pelo WhatsApp:
+https://wa.me/5562999948445
+
+Clique no link acima para abrir uma conversa comigo!
+
+Respondo rapidamente por lá também 😊"
+
+/horario:
+"⏰ Horário de atendimento:
+
+📅 Segunda a Sexta: 8h às 18h
+🚫 Sábado e Domingo: Fechado
+
+Fora desses horários:
+📱 WhatsApp: (62) 99994-8445
+📧 Email: pedrotiago@pedrotiagocontabilidade.com.br"
+
+CONFIGURAÇÕES AVANÇADAS:
+✅ Capturar email do visitante
+✅ Mostrar agentes online
+✅ Som de notificação ativado
+✅ Histórico de conversas salvo
+✅ Integração com Google Analytics
+
+PALAVRAS-CHAVE PARA ALERTAS:
+- "urgente"
+- "fiscal"
+- "receita federal"
+- "multa"
+- "notificação"
+- "prazo"
+
+HORÁRIOS DE ATENDIMENTO NO SISTEMA:
+Segunda: 08:00 - 18:00
+Terça: 08:00 - 18:00
+Quarta: 08:00 - 18:00
+Quinta: 08:00 - 18:00
+Sexta: 08:00 - 18:00
+Sábado: Offline
+Domingo: Offline
+
+===============================================

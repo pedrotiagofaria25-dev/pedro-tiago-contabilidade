@@ -1,0 +1,130 @@
+===============================================
+GUIA COMPLETO EMAIL PROFISSIONAL - PEDRO TIAGO CONTABILIDADE
+===============================================
+
+EMAIL DESEJADO: pedrotiago@pedrotiagocontabilidade.com.br
+
+OPÇÃO RECOMENDADA: GOOGLE WORKSPACE BUSINESS STARTER
+
+CUSTOS:
+Google Workspace: R$ 36/mês (6 USD)
+Benefícios: Gmail profissional + Google Drive + Docs + Sheets + Meet
+
+PASSO A PASSO GOOGLE WORKSPACE:
+
+1. ACESSAR:
+https://workspace.google.com/intl/pt-BR/pricing/
+
+2. ESCOLHER:
+Business Starter - R$ 36/mês por usuário
+
+3. CONFIGURAR:
+Domínio: pedrotiagocontabilidade.com.br
+Usuários: 1 (Pedro Tiago)
+Email principal: pedrotiago@pedrotiagocontabilidade.com.br
+
+4. CONFIGURAÇÃO DNS (registro.br):
+Após contratar, adicionar no painel do registro.br:
+
+REGISTROS MX (prioridade | servidor):
+1   aspmx.l.google.com.
+5   alt1.aspmx.l.google.com.
+5   alt2.aspmx.l.google.com.
+10  alt3.aspmx.l.google.com.
+10  alt4.aspmx.l.google.com.
+
+REGISTRO CNAME:
+mail -> ghs.googlehosted.com.
+
+REGISTRO TXT (verificação):
+v=spf1 include:_spf.google.com ~all
+
+ALTERNATIVAS MAIS BARATAS:
+
+ZOHO MAIL LITE (R$ 6/mês):
+- Email profissional básico
+- 5GB armazenamento
+- Webmail + mobile
+- Configuração: https://www.zoho.com/mail/
+
+HOSTGATOR EMAIL (R$ 12/mês):
+- Email profissional
+- Webmail
+- 25GB armazenamento
+- Configuração: https://www.hostgator.com.br/
+
+CONFIGURAÇÃO DE ASSINATURA EMAIL:
+
+ASSINATURA RECOMENDADA:
+---
+Pedro Tiago
+Contador CRC GO-027770/O
+Pedro Tiago Contabilidade
+
+📧 pedrotiago@pedrotiagocontabilidade.com.br
+📱 (62) 99994-8445
+🌐 www.pedrotiagocontabilidade.com.br
+
+Especialidades:
+✅ Contabilidade Digital
+✅ Automação Fiscal
+✅ SPED | NFe | NFCe
+---
+
+CONFIGURAÇÃO NO CELULAR:
+Servidor IMAP: imap.gmail.com
+Porta: 993 (SSL)
+Servidor SMTP: smtp.gmail.com
+Porta: 587 (STARTTLS)
+
+CONFIGURAÇÃO OUTLOOK:
+Servidor: outlook.office365.com (se usar Microsoft)
+Ou IMAP Gmail conforme acima
+
+CRONOGRAMA DE IMPLEMENTAÇÃO:
+
+DIA 1:
+- Contratar Google Workspace
+- Configurar DNS no registro.br
+
+DIA 2-3:
+- Aguardar propagação DNS (24-48h)
+- Testar envio/recebimento
+
+DIA 4:
+- Configurar assinatura profissional
+- Testar em dispositivos
+
+DIA 5+:
+- Migrar comunicações importantes
+- Atualizar contatos nos sistemas
+
+MODELO DE EMAIL PROFISSIONAL:
+
+RESPOSTA INICIAL:
+Assunto: Re: Solicitação de Serviços Contábeis
+
+Prezado(a) [Nome],
+
+Obrigado pelo interesse nos serviços da Pedro Tiago Contabilidade!
+
+Sou contador registrado no CRC-GO sob o número 027770/O, especializado em contabilidade digital e automação fiscal.
+
+Para elaborar uma proposta personalizada, preciso conhecer melhor sua necessidade:
+
+1. Ramo de atividade da empresa
+2. Faturamento mensal médio
+3. Número de colaboradores
+4. Serviços de interesse
+
+Estou disponível para uma conversa por:
+📞 Telefone: (62) 99994-8445
+💬 WhatsApp: https://wa.me/5562999948445
+
+Aguardo seu retorno!
+
+Atenciosamente,
+Pedro Tiago
+[Assinatura completa]
+
+===============================================
