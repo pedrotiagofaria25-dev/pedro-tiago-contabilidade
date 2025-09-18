@@ -1,0 +1,38 @@
+# Configuração GitLab Pages - Pedro Tiago Contabilidade
+# Automação 100% configurada para AIs
+
+project:
+  name: pedro-tiago-contabilidade
+  username: pedrotiagofaria25
+  email: pedrotiagofaria25@gmail.com
+  domain: www.pedrotiagocontabilidade.com.br
+
+pages:
+  url: https://pedrotiagofaria25.gitlab.io/pedro-tiago-contabilidade
+  custom_domain: www.pedrotiagocontabilidade.com.br
+  ssl: true
+  force_https: true
+
+deployment:
+  source: public/
+  build_command: npm run build:production
+  publish_directory: dist/
+
+automation:
+  auto_deploy: true
+  deploy_on_push: true
+  branch: main
+
+optimization:
+  cache_enabled: true
+  compression: true
+  minification: true
+
+security:
+  access_level: private
+  pages_access_level: public
+
+notifications:
+  email: pedrotiagofaria25@gmail.com
+  deploy_success: true
+  deploy_failure: true

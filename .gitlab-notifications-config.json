@@ -1,0 +1,94 @@
+{
+  "project": {
+    "name": "pedro-tiago-contabilidade",
+    "owner": "pedrotiagofaria25",
+    "email": "pedrotiagofaria25@gmail.com",
+    "description": "Configurações de notificação otimizadas para automação por AIs"
+  },
+
+  "email_notifications": {
+    "enabled": true,
+    "primary_email": "pedrotiagofaria25@gmail.com",
+    "backup_email": "pedrotiago@pedrotiagocontabilidade.com.br",
+
+    "pipeline_notifications": {
+      "success": true,
+      "failure": true,
+      "fixed": true,
+      "still_failing": false
+    },
+
+    "merge_request_notifications": {
+      "new_merge_request": true,
+      "push_to_merge_request": true,
+      "merge_when_pipeline_succeeds": true,
+      "merge_request_status": true,
+      "successful_merge": true,
+      "failed_pipeline": true
+    },
+
+    "issue_notifications": {
+      "new_issue": true,
+      "close_issue": true,
+      "reassign_issue": true,
+      "issue_due": true
+    },
+
+    "deployment_notifications": {
+      "successful_deployment": true,
+      "failed_deployment": true,
+      "pages_deployment": true
+    }
+  },
+
+  "webhook_notifications": {
+    "enabled": false,
+    "endpoints": [],
+    "events": [
+      "push_events",
+      "merge_requests_events",
+      "pipeline_events",
+      "deployment_events"
+    ]
+  },
+
+  "slack_integration": {
+    "enabled": false,
+    "webhook_url": "",
+    "channel": "",
+    "username": "GitLab-Pedro-Tiago"
+  },
+
+  "automation_settings": {
+    "ai_friendly": true,
+    "detailed_logs": true,
+    "include_build_artifacts": true,
+    "include_test_results": true,
+    "notification_frequency": "immediate",
+
+    "custom_templates": {
+      "success_template": "✅ Deploy realizado com sucesso!\n🌐 Site: https://www.pedrotiagocontabilidade.com.br\n📧 Responsável: pedrotiagofaria25@gmail.com",
+      "failure_template": "❌ Falha no deploy!\n🔧 Pipeline: {pipeline_url}\n📧 Verificar: pedrotiagofaria25@gmail.com",
+      "pages_template": "📄 GitLab Pages atualizado!\n🔗 URL: {pages_url}\n🌐 Domínio: www.pedrotiagocontabilidade.com.br"
+    }
+  },
+
+  "monitoring": {
+    "uptime_monitoring": true,
+    "performance_alerts": true,
+    "security_alerts": true,
+    "ssl_expiry_alerts": true,
+    "domain_expiry_alerts": true
+  },
+
+  "notification_schedule": {
+    "immediate_events": [
+      "deployment_failure",
+      "security_alert",
+      "ssl_expiry"
+    ],
+    "daily_summary": true,
+    "weekly_report": true,
+    "monthly_analytics": true
+  }
+}

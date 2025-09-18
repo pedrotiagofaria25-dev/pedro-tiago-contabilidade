@@ -1,0 +1,74 @@
+# Configuração de Segurança GitLab - Pedro Tiago Contabilidade
+# Otimizada para máxima segurança e automação
+
+project_security:
+  # Configurações básicas de segurança
+  visibility: private  # Repositório privado
+  issues_access_level: private
+  repository_access_level: private
+  merge_requests_access_level: private
+  wiki_access_level: disabled
+  snippets_access_level: disabled
+  pages_access_level: public  # GitLab Pages público
+
+branch_protection:
+  main:
+    push_access_level: maintainer
+    merge_access_level: maintainer
+    unprotect_access_level: maintainer
+    allow_force_push: false
+    code_owner_approval_required: false
+
+merge_request_settings:
+  merge_method: merge_commit
+  squash_option: default_off
+  delete_source_branch_option: true
+  merge_trains_enabled: false
+
+ci_cd_security:
+  # Variáveis de ambiente seguras
+  variables:
+    NODE_ENV: "production"
+    CI_DEBUG_TRACE: "false"
+
+  # Configurações de pipeline
+  pipeline_schedule_enabled: false
+  auto_cancel_pending_pipelines: enabled
+
+access_tokens:
+  # Tokens recomendados para criar (manual)
+  - name: "AI_AUTOMATION_TOKEN"
+    scopes: ["api", "read_repository", "write_repository"]
+    expires_at: "2025-12-31"
+    description: "Token para automação por AIs"
+
+  - name: "PAGES_DEPLOY_TOKEN"
+    scopes: ["read_repository"]
+    expires_at: "2025-12-31"
+    description: "Token específico para GitLab Pages"
+
+security_policies:
+  # Políticas de segurança recomendadas
+  require_two_factor_authentication: false  # Configurar manualmente
+  password_authentication_enabled: true
+  project_creation_level: maintainer
+
+notifications:
+  # Configurações de notificação de segurança
+  email: "pedrotiagofaria25@gmail.com"
+  security_events: true
+  pipeline_events: true
+  merge_request_events: true
+  push_events: true
+
+backup_settings:
+  # Configurações de backup automatizado
+  auto_backup: true
+  backup_frequency: "weekly"
+  retention_period: "3 months"
+
+monitoring:
+  # Monitoramento de segurança
+  failed_login_attempts: true
+  suspicious_activity_alerts: true
+  access_log_monitoring: true
