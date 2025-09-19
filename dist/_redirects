@@ -1,0 +1,15 @@
+# SPA routing
+/* /index.html 200
+
+# API redirects
+/api/* /.netlify/functions/:splat 200
+
+# SEO redirects
+/contabilidade /servicos 301
+/fiscal /servicos 301
+/consultoria /contato 301
+
+# Security redirects
+/admin/* /404 401
+/wp-admin/* /404 401
+/.git/* /404 401
