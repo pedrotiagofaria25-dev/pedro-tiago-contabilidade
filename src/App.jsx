@@ -1,25 +1,58 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, lazy, Suspense } from 'react'
 import './App.css'
+
+// Lazy loading para componentes pesados
+const LazyPricingSection = lazy(() => Promise.resolve({
+  default: ({ pricing }) => pricing
+}))
 
 function App() {
   const [notificationPermission, setNotificationPermission] = useState('default')
+  const [isVisible, setIsVisible] = useState({
+    about: false,
+    pricing: false,
+    credentials: false
+  })
 
   useEffect(() => {
-    // Registrar Service Worker
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js')
-        .then((registration) => {
-          console.log('SW registered: ', registration);
-        })
-        .catch((registrationError) => {
-          console.log('SW registration failed: ', registrationError);
-        });
+    // Registrar Service Worker de forma otimizada
+    if ('serviceWorker' in navigator && window.location.protocol === 'https:') {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then((registration) => {
+            console.log('SW registered: ', registration);
+          })
+          .catch((registrationError) => {
+            console.log('SW registration failed: ', registrationError);
+          });
+      });
     }
 
     // Verificar permissão de notificação
     if ('Notification' in window) {
       setNotificationPermission(Notification.permission)
     }
+
+    // Intersection Observer para lazy loading
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const sectionName = entry.target.dataset.section
+            if (sectionName) {
+              setIsVisible(prev => ({ ...prev, [sectionName]: true }))
+            }
+          }
+        })
+      },
+      { threshold: 0.1 }
+    )
+
+    // Observar seções para lazy loading
+    const sections = document.querySelectorAll('[data-section]')
+    sections.forEach(section => observer.observe(section))
+
+    return () => observer.disconnect()
   }, [])
 
   const requestNotificationPermission = async () => {
@@ -105,10 +138,20 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>🏢 Pedro Tiago Contabilidade</h1>
+        <div className="hero-header">
+          <div className="hero-photo">
+            <div className="professional-photo">
+              <span className="photo-placeholder">PT</span>
+            </div>
+            <div className="hero-text">
+              <h1>Pedro Tiago Contabilidade</h1>
+              <p className="professional-title">Contador CRC GO-027770/O</p>
+            </div>
+          </div>
+        </div>
         <div className="hero-section">
           <h2 className="hero-headline">Reduza impostos e automatize sua contabilidade sem dor de cabeça</h2>
-          <p className="hero-subtitle">Especialista CRC GO-027770/O em Contabilidade Digital • Sua empresa sempre em dia</p>
+          <p className="hero-subtitle">Especialista em Contabilidade Digital • Sua empresa sempre em dia</p>
           <div className="hero-benefits">
             <span className="benefit">✅ Sem multas fiscais</span>
             <span className="benefit">✅ Impostos otimizados</span>
@@ -169,7 +212,32 @@ function App() {
             </div>
           </div>
 
-          <div className="credentials-section">
+          <div className="about-section" data-section="about" data-lazy-load="true">
+            <h3>👨‍💼 Sobre Pedro Tiago</h3>
+            <div className="about-content">
+              <div className="about-text">
+                <p>
+                  <strong>Contador especialista em automação</strong> com foco total em <strong>contabilidade digital</strong>
+                  para pequenas e médias empresas em Goiânia.
+                </p>
+                <p>
+                  Registrado no <strong>CRC-GO 027770/O</strong>, trabalho com os principais sistemas do mercado
+                  (Calima Web e Makrosystem) para garantir que sua empresa esteja sempre em dia, sem multas e com impostos otimizados.
+                </p>
+                <div className="differentials">
+                  <h4>🎯 Por que escolher Pedro Tiago?</h4>
+                  <ul>
+                    <li>✅ <strong>Especialização única</strong> em automação fiscal</li>
+                    <li>✅ <strong>Atendimento personalizado</strong> via WhatsApp</li>
+                    <li>✅ <strong>Processos 100% digitais</strong> e organizados</li>
+                    <li>✅ <strong>Foco em resultados</strong>: menos impostos, zero multas</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="credentials-section" data-section="credentials" data-lazy-load="true">
             <h3>🏆 Credenciais e Diferenciais</h3>
             <div className="credentials-grid">
               <div className="credential-card">
@@ -202,6 +270,66 @@ function App() {
                 <span className="label">Suporte via WhatsApp</span>
               </div>
             </div>
+          </div>
+
+          <div className="pricing-section" data-section="pricing" data-lazy-load="true">
+            <h3>💰 Investimento em Contabilidade Digital</h3>
+            <p>Valores transparentes • Sem surpresas • Pagamento mensal</p>
+            <div className="pricing-grid">
+              <div className="pricing-card basic">
+                <h4>📊 Básico</h4>
+                <div className="price">
+                  <span className="currency">R$</span>
+                  <span className="amount">299</span>
+                  <span className="period">/mês</span>
+                </div>
+                <ul>
+                  <li>✅ Contabilidade completa</li>
+                  <li>✅ SPED automatizado</li>
+                  <li>✅ Suporte WhatsApp</li>
+                  <li>✅ Relatórios mensais</li>
+                </ul>
+                <span className="ideal">Ideal para: ME e MEI</span>
+              </div>
+
+              <div className="pricing-card popular">
+                <div className="popular-badge">Mais Popular</div>
+                <h4>🚀 Completo</h4>
+                <div className="price">
+                  <span className="currency">R$</span>
+                  <span className="amount">499</span>
+                  <span className="period">/mês</span>
+                </div>
+                <ul>
+                  <li>✅ Tudo do Básico +</li>
+                  <li>✅ Consultoria tributária</li>
+                  <li>✅ Otimização de impostos</li>
+                  <li>✅ Relatórios semanais</li>
+                  <li>✅ Atendimento prioritário</li>
+                </ul>
+                <span className="ideal">Ideal para: EPP e LTDA</span>
+              </div>
+
+              <div className="pricing-card premium">
+                <h4>👑 Premium</h4>
+                <div className="price">
+                  <span className="currency">A partir de R$</span>
+                  <span className="amount">799</span>
+                  <span className="period">/mês</span>
+                </div>
+                <ul>
+                  <li>✅ Tudo do Completo +</li>
+                  <li>✅ Consultoria personalizada</li>
+                  <li>✅ Planejamento estratégico</li>
+                  <li>✅ Relatórios personalizados</li>
+                  <li>✅ Suporte 24/7</li>
+                </ul>
+                <span className="ideal">Ideal para: Empresas grandes</span>
+              </div>
+            </div>
+            <p className="pricing-note">
+              💡 <strong>Primeira consulta gratuita</strong> para avaliar sua situação e definir o melhor plano
+            </p>
           </div>
 
           <div className="cta-section">
@@ -337,6 +465,20 @@ function App() {
           </div>
         </div>
       )}
+
+      {/* WhatsApp Floating Button */}
+      <div className="whatsapp-floating">
+        <a
+          href="https://wa.me/5562999948445?text=Olá Pedro Tiago! Encontrei seu site e gostaria de conversar sobre contabilidade para minha empresa."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="whatsapp-float-btn"
+          title="Fale conosco no WhatsApp"
+        >
+          <span className="whatsapp-icon">💬</span>
+          <span className="whatsapp-text">WhatsApp</span>
+        </a>
+      </div>
     </div>
   )
 }

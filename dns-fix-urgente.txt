@@ -1,0 +1,41 @@
+# 🚨 CORREÇÃO URGENTE DNS TXT - PROBLEMA IDENTIFICADO
+
+## ❌ PROBLEMA:
+```
+Você configurou: pedrotiagocontabilidade.com.br (sem www)
+OpenAI verifica: www.pedrotiagocontabilidade.com.br (com www)
+Resultado: "did not have any TXT records"
+```
+
+## ✅ SOLUÇÃO IMEDIATA:
+
+### **ADICIONE MAIS UM REGISTRO TXT:**
+
+No registro.br, adicione:
+```
+TIPO: TXT
+NOME: www
+DADOS: openai-domain-verification=dv-26L88WpUpxA27NMDHZvQFSx3
+```
+
+### **RESULTADO FINAL NECESSÁRIO:**
+```
+✅ TXT pedrotiagocontabilidade.com.br → "openai-domain-verification=..."
+✅ TXT www.pedrotiagocontabilidade.com.br → "openai-domain-verification=..."
+```
+
+## 🚀 AÇÃO IMEDIATA:
+1. **MANTER** o registro atual (pedrotiagocontabilidade.com.br)
+2. **ADICIONAR** novo registro TXT:
+   - Nome: www
+   - Dados: openai-domain-verification=dv-26L88WpUpxA27NMDHZvQFSx3
+3. **SALVAR** alterações
+4. **AGUARDAR** 10-30 minutos (não 1 hora)
+5. **TESTAR** imediatamente
+
+## ⚡ TESTE RÁPIDO (5-10 min):
+```bash
+nslookup -type=TXT www.pedrotiagocontabilidade.com.br
+```
+
+Se aparecer o registro, pode testar na OpenAI!
