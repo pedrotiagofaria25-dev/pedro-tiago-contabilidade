@@ -1,0 +1,1034 @@
+/* Pedro Tiago Contabilidade - CSS Melhorado */
+/* Versão com melhorias de layout prioritárias */
+
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #16a34a;
+  --accent-color: #dc2626;
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  --background: #ffffff;
+  --surface: #f9fafb;
+  --gold: #FFD700;
+  --green: #4CAF50;
+  --whatsapp: #25D366;
+}
+
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  color: white;
+}
+
+.App-header {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.App-header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.App-header > p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.hero-section h2 {
+  font-size: 2rem;
+  color: #FFD700;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.hero-section > p {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #FFD700;
+}
+
+.service-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.feature {
+  background: rgba(255, 215, 0, 0.2);
+  color: #FFD700;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.contact-info {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.tech-stack {
+  margin: 3rem 0;
+}
+
+.tech-stack h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #FFD700;
+}
+
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.badge {
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: transform 0.2s ease;
+}
+
+.badge.primary {
+  background: #FFD700;
+  color: #333;
+}
+
+.badge.secondary {
+  background: rgba(255, 255, 255, 0.2);
+  color: #FFD700;
+  border: 1px solid #FFD700;
+}
+
+.badge.tertiary {
+  background: rgba(102, 126, 234, 0.3);
+  color: white;
+  border: 1px solid rgba(102, 126, 234, 0.5);
+}
+
+.badge:hover {
+  transform: scale(1.1);
+}
+
+.status {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: rgba(0, 255, 0, 0.1);
+  border: 2px solid rgba(0, 255, 0, 0.3);
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+}
+
+.status p {
+  margin: 0.8rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.whatsapp-btn, .email-btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.whatsapp-btn {
+  background: #25D366;
+  color: white;
+}
+
+.whatsapp-btn:hover {
+  background: #128C7E;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(37, 211, 102, 0.3);
+}
+
+.email-btn {
+  background: #EA4335;
+  color: white;
+}
+
+.email-btn:hover {
+  background: #D73527;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(234, 67, 53, 0.3);
+}
+
+.communication-note {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+.communication-note p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #FFD700;
+}
+
+.communication-note strong {
+  color: white;
+}
+
+/* Hero Header with Photo */
+.hero-header {
+  margin-bottom: 3rem;
+}
+
+.hero-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.professional-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #FFD700;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.photo-placeholder {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.professional-title {
+  font-size: 1.3rem;
+  color: #FFD700;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero-headline {
+  font-size: 2.2rem;
+  color: #FFD700;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.hero-benefits {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.hero-benefits .benefit {
+  background: rgba(255, 215, 0, 0.2);
+  color: #FFD700;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  font-size: 0.9rem;
+}
+
+/* Service Benefits */
+.service-benefit {
+  background: rgba(76, 175, 80, 0.15);
+  color: #4CAF50;
+  padding: 0.8rem;
+  border-radius: 10px;
+  margin: 1rem 0;
+  border: 1px solid rgba(76, 175, 80, 0.3);
+  font-size: 0.9rem;
+}
+
+/* Credentials Section */
+.credentials-section {
+  margin: 4rem 0;
+  padding: 3rem 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.credentials-section h3 {
+  font-size: 2rem;
+  color: #FFD700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.credential-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 15px;
+  border-left: 4px solid #FFD700;
+  text-align: center;
+}
+
+.credential-card h4 {
+  color: #FFD700;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.credential-card p {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.credential-card span {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+.trust-indicators {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.indicator .number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #FFD700;
+}
+
+.indicator .label {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* CTA Section */
+.cta-section {
+  margin: 4rem 0;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.2) 0%, rgba(76, 175, 80, 0.1) 100%);
+  border-radius: 20px;
+  border: 2px solid #4CAF50;
+  text-align: center;
+}
+
+.cta-section h3 {
+  font-size: 2rem;
+  color: #4CAF50;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.main-cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primary-cta, .secondary-cta {
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  min-width: 250px;
+}
+
+.primary-cta {
+  background: #25D366;
+  color: white;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.primary-cta:hover {
+  background: #128C7E;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+.secondary-cta {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 2px solid #FFD700;
+}
+
+.secondary-cta:hover {
+  background: rgba(255, 215, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+/* Contact Info Grid */
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.contact-method {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-method h4 {
+  color: #FFD700;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.contact-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.contact-link:hover {
+  color: #FFD700;
+}
+
+.contact-method p {
+  margin: 0.3rem 0;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* About Section */
+.about-section {
+  margin: 4rem 0;
+  padding: 3rem 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  border-left: 5px solid #FFD700;
+}
+
+.about-section h3 {
+  font-size: 2rem;
+  color: #FFD700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.differentials {
+  margin-top: 2rem;
+}
+
+.differentials h4 {
+  color: #FFD700;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.differentials ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.differentials li {
+  padding: 0.8rem 0;
+  font-size: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Pricing Section */
+.pricing-section {
+  margin: 4rem 0;
+  padding: 3rem 2rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.pricing-section h3 {
+  font-size: 2rem;
+  color: #FFD700;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.pricing-section p {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.pricing-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  border: 2px solid transparent;
+  transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+}
+
+.pricing-card.basic {
+  border-color: rgba(255, 215, 0, 0.3);
+}
+
+.pricing-card.popular {
+  border-color: #4CAF50;
+  background: rgba(76, 175, 80, 0.1);
+}
+
+.pricing-card.premium {
+  border-color: rgba(147, 112, 219, 0.5);
+  background: rgba(147, 112, 219, 0.1);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #4CAF50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.pricing-card h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #FFD700;
+}
+
+.price {
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.currency {
+  font-size: 1rem;
+  color: #FFD700;
+}
+
+.amount {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.period {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.pricing-card li {
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.ideal {
+  display: block;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background: rgba(255, 215, 0, 0.2);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: #FFD700;
+  font-weight: bold;
+}
+
+.pricing-note {
+  text-align: center;
+  background: rgba(76, 175, 80, 0.2);
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #4CAF50;
+  font-size: 1rem;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-floating {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1001;
+}
+
+.whatsapp-float-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #25D366;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.whatsapp-float-btn:hover {
+  background: #128C7E;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-icon {
+  font-size: 1.5rem;
+}
+
+.whatsapp-text {
+  font-size: 1rem;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  }
+  50% {
+    box-shadow: 0 6px 25px rgba(37, 211, 102, 0.7);
+  }
+  100% {
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  }
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.chat-toggle-btn, .notification-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.chat-toggle-btn:hover, .notification-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #5a6fd8 0%, #6a4c93 100%);
+}
+
+.notification-btn {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+}
+
+.notification-btn:hover {
+  background: linear-gradient(135deg, #ff5252 0%, #d84343 100%);
+}
+
+.notification-status {
+  background: rgba(76, 175, 80, 0.2);
+  color: #4CAF50;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-weight: bold;
+  border: 2px solid #4CAF50;
+}
+
+.chat-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 350px;
+  height: 500px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 2px solid #667eea;
+}
+
+.chat-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-header h4 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.close-chat {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  background: #f5f5f5;
+}
+
+.message {
+  margin-bottom: 1rem;
+}
+
+.message.user {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.message.bot {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.message-bubble {
+  padding: 0.8rem 1rem;
+  border-radius: 15px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.message.user .message-bubble {
+  background: #667eea;
+  color: white;
+}
+
+.message.bot .message-bubble {
+  background: white;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.message-time {
+  font-size: 0.7rem;
+  color: #666;
+  margin-top: 0.2rem;
+}
+
+.chat-input {
+  display: flex;
+  padding: 1rem;
+  background: white;
+  border-top: 1px solid #ddd;
+}
+
+.chat-input-field {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.send-btn {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.send-btn:hover {
+  background: #5a6fd8;
+}
+
+.chat-footer {
+  padding: 0.5rem;
+  background: #f9f9f9;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+.chat-footer p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.chat-footer a {
+  color: #667eea;
+  text-decoration: none;
+}
+
+.chat-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .App-header {
+    padding: 1rem;
+  }
+
+  .hero-photo {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .professional-photo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .professional-title {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .hero-headline {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-benefits {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-section {
+    padding: 2rem 1rem;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .whatsapp-float-btn {
+    padding: 0.8rem 1rem;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .whatsapp-text {
+    display: none;
+  }
+
+  .whatsapp-icon {
+    font-size: 2rem;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  .tech-badges {
+    gap: 0.5rem;
+  }
+
+  .credentials-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .trust-indicators {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .main-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .primary-cta, .secondary-cta {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .contact-info-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .credentials-section {
+    padding: 2rem 1rem;
+  }
+
+  .cta-section {
+    padding: 2rem 1rem;
+  }
+
+  .chat-widget {
+    width: 90vw;
+    height: 70vh;
+    right: 5vw;
+    bottom: 10px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chat-toggle-btn, .notification-btn {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+  }
+}
