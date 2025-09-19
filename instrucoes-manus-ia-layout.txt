@@ -1,0 +1,260 @@
+# 🤖 INSTRUÇÕES COMPLETAS PARA MANUS IA - AJUSTE DE LAYOUT
+
+## 📋 CONTEXTO DO PROJETO:
+Site de contabilidade profissional em React/Vite já implementado e funcionando em produção. Preciso de ajustes de layout e design para melhorar a aparência visual e UX.
+
+## 🌐 INFORMAÇÕES DO SITE:
+- **URL Produção**: https://www.pedrotiagocontabilidade.com.br
+- **Deploy Atual**: https://pedro-tiago-contabilidade-chc9qr5v4-pedro-tiagos-projects.vercel.app
+- **Tecnologia**: React 18 + Vite + CSS
+- **Responsivo**: Mobile-first design
+- **Status**: 100% funcional, precisa apenas melhorias visuais
+
+---
+
+## 📁 ESTRUTURA DO PROJETO:
+
+### **Arquivos Principais:**
+```
+C:\PedroTiago\02_Desenvolvimento\Projetos\Site_Principal\
+├── src/
+│   ├── App.jsx (componente principal React)
+│   ├── App.css (estilos CSS principais)
+│   └── main.jsx (entry point)
+├── index.html (HTML base)
+├── package.json (dependências)
+├── vite.config.js (configuração Vite)
+└── vercel.json (configuração deploy)
+```
+
+---
+
+## 🎨 COMPONENTES ATUAIS IMPLEMENTADOS:
+
+### **1. HEADER/HERO SECTION:**
+- Logo/nome da empresa
+- Título profissional com CRC
+- Foto profissional placeholder
+- Call-to-action para diagnóstico gratuito
+
+### **2. SEÇÕES PRINCIPAIS:**
+- **Serviços**: 4 cards (Contabilidade Digital, Automação Fiscal, Relatórios, Consultoria)
+- **Sobre**: Informações do Pedro Tiago com diferenciais
+- **Preços**: 3 planos (Básico R$299, Completo R$499, Premium R$799+)
+- **Credenciais**: CRC, especialização, sistemas
+
+### **3. ELEMENTOS FUNCIONAIS:**
+- **WhatsApp flutuante**: Botão fixo com animação
+- **Chat widget**: Sistema de chat interativo
+- **CTAs**: Botões de ação otimizados
+- **Formulários**: Contato e diagnóstico
+
+---
+
+## 🎯 MELHORIAS DE LAYOUT NECESSÁRIAS:
+
+### **PRIORIDADE ALTA:**
+
+#### **1. HERO SECTION:**
+- Melhorar o layout da foto profissional (atualmente placeholder)
+- Otimizar posicionamento do texto principal
+- Ajustar hierarchy visual dos elementos
+- Melhorar contraste e legibilidade
+- Adicionar mais impacto visual
+
+#### **2. CARDS DE SERVIÇOS:**
+- Uniformizar altura dos cards
+- Melhorar espaçamento interno
+- Adicionar hover effects mais suaves
+- Otimizar iconografia (emojis por ícones mais profissionais)
+- Melhorar alinhamento vertical
+
+#### **3. TABELA DE PREÇOS:**
+- Redesign completo mais moderno
+- Melhorar destaque do plano "Mais Popular"
+- Otimizar espaçamento e typography
+- Adicionar animações sutis
+- Melhorar call-to-action buttons
+
+#### **4. RESPONSIVIDADE:**
+- Ajustar breakpoints para tablets
+- Melhorar layout mobile dos cards
+- Otimizar espaçamentos em telas pequenas
+- Testar em diferentes dispositivos
+
+### **PRIORIDADE MÉDIA:**
+
+#### **5. SEÇÃO SOBRE:**
+- Melhorar layout do texto vs credenciais
+- Adicionar elementos visuais de apoio
+- Otimizar hierarchy das informações
+- Melhorar flow de leitura
+
+#### **6. WHATSAPP BUTTON:**
+- Ajustar posicionamento (não sobrepor conteúdo)
+- Melhorar animação de pulse
+- Otimizar para diferentes telas
+- Adicionar tooltip informativo
+
+---
+
+## 🎨 DIRETRIZES DE DESIGN:
+
+### **PALETA DE CORES ATUAL:**
+```css
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #16a34a;
+  --accent-color: #dc2626;
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  --background: #ffffff;
+  --surface: #f9fafb;
+}
+```
+
+### **FONTES:**
+- **Primary**: System fonts (Apple System, Segoe UI, Roboto)
+- **Headings**: Font-weight 700
+- **Body**: Font-weight 400
+- **CTA Buttons**: Font-weight 600
+
+### **ESPAÇAMENTOS:**
+- **Seções**: 4rem margin vertical
+- **Cards**: 1.5rem padding
+- **Grid gaps**: 2rem
+- **Mobile**: Reduzir em 25%
+
+---
+
+## 📱 REQUISITOS TÉCNICOS:
+
+### **COMPATIBILIDADE:**
+- **Browsers**: Chrome, Firefox, Safari, Edge
+- **Mobile**: iOS Safari, Android Chrome
+- **Breakpoints**:
+  - Mobile: < 768px
+  - Tablet: 768px - 1024px
+  - Desktop: > 1024px
+
+### **PERFORMANCE:**
+- **Manter**: Bundle size otimizado
+- **CSS**: Usar apenas CSS puro (sem frameworks)
+- **Imagens**: Lazy loading mantido
+- **Animações**: CSS transforms (não JS)
+
+---
+
+## 🚀 INFORMAÇÕES TÉCNICAS DO DEPLOY:
+
+### **COMANDOS BUILD:**
+```bash
+npm run build      # Build para produção
+npm run preview    # Testar build localmente
+npm run dev        # Servidor desenvolvimento
+```
+
+### **DEPLOY AUTOMÁTICO:**
+- **Vercel**: Auto-deploy no push para main
+- **URL Preview**: Deploy gera URL temporária
+- **Alias**: Comando alias para domínio principal
+
+---
+
+## 📋 INFORMAÇÕES DO NEGÓCIO:
+
+### **EMPRESA:**
+- **Nome**: Pedro Tiago Contabilidade
+- **Proprietário**: Pedro Tiago
+- **CRC**: GO-027770/O
+- **Local**: Goiânia, Goiás
+- **Especialidade**: Contabilidade Digital e Automação Fiscal
+
+### **SERVIÇOS:**
+1. **Contabilidade Digital** (R$299/mês)
+2. **Automação Fiscal** (SPED, NFe, NFCe)
+3. **Consultoria Tributária** (R$499/mês)
+4. **Relatórios Inteligentes** (R$799+/mês)
+
+### **SISTEMAS UTILIZADOS:**
+- Calima Web
+- Makrosystem
+- SPED Fiscal
+- NFe Goiás
+
+### **CONTATO:**
+- **Tel**: +55-62-99994-8445
+- **Email**: pedrotiago@pedrotiagocontabilidade.com.br
+- **WhatsApp**: Integração ativa
+- **Horário**: Seg-Sex 8h-18h
+
+---
+
+## ✅ O QUE NÃO DEVE SER ALTERADO:
+
+### **FUNCIONALIDADES:**
+- ✅ **Manter**: Toda funcionalidade React existente
+- ✅ **Manter**: Sistema de chat widget
+- ✅ **Manter**: WhatsApp integration
+- ✅ **Manter**: Google Analytics
+- ✅ **Manter**: SEO otimizado (meta tags)
+- ✅ **Manter**: Lazy loading implementation
+- ✅ **Manter**: Service Worker
+
+### **ESTRUTURA:**
+- ✅ **Manter**: Ordem das seções
+- ✅ **Manter**: Hierarchy de informações
+- ✅ **Manter**: Call-to-actions positioning
+- ✅ **Manter**: Schema.org structured data
+
+---
+
+## 🎯 OBJETIVOS ESPECÍFICOS:
+
+### **VISUAL:**
+1. **Profissionalizar** aparência geral
+2. **Modernizar** componentes visuais
+3. **Uniformizar** espaçamentos
+4. **Melhorar** legibilidade
+5. **Otimizar** user experience
+
+### **UX:**
+1. **Facilitar** navegação
+2. **Destacar** call-to-actions
+3. **Melhorar** flow conversion
+4. **Otimizar** mobile experience
+5. **Aumentar** tempo de permanência
+
+---
+
+## 📞 RESULTADO ESPERADO:
+
+### **ENTREGÁVEL:**
+- Arquivo `App.css` atualizado com melhorias de layout
+- Arquivo `App.jsx` com ajustes estruturais se necessário
+- Layout mais profissional e moderno
+- Melhor experiência mobile
+- Conversion rate otimizada
+
+### **CRITÉRIOS DE SUCESSO:**
+- ✅ Visual mais profissional
+- ✅ Responsividade perfeita
+- ✅ Performance mantida
+- ✅ Funcionalidades intactas
+- ✅ SEO preservado
+
+---
+
+## 🔧 COMO TESTAR:
+
+### **APÓS ALTERAÇÕES:**
+1. `npm run build` - Verificar build sem erros
+2. `npm run preview` - Testar localmente
+3. Testar responsividade em diferentes telas
+4. Verificar funcionalidade do WhatsApp button
+5. Testar chat widget
+6. Verificar performance (bundle size)
+
+---
+
+**💡 RESUMO: Preciso de melhorias visuais e de UX mantendo toda funcionalidade existente. O site já está otimizado tecnicamente, precisa apenas ficar mais bonito e profissional.**
