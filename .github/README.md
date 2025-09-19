@@ -1,0 +1,1 @@
+# No workflows - Automation friendly
