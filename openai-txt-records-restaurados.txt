@@ -1,0 +1,52 @@
+# ✅ REGISTROS TXT OPENAI RESTAURADOS COM SUCESSO
+
+## 🎯 PROBLEMA IDENTIFICADO E RESOLVIDO:
+Quando mudamos os nameservers para o Vercel, perdemos os registros TXT do OpenAI/ChatGPT Pro.
+
+## ✅ SOLUÇÃO APLICADA:
+
+### **Registros TXT adicionados no Vercel DNS:**
+
+1. **Domínio raiz (pedrotiagocontabilidade.com.br):**
+   ```
+   TIPO: TXT
+   NOME: @ (raiz)
+   VALOR: openai-domain-verification=dv-26L88WpUpxA27NMDHZvQFSx3
+   STATUS: ✅ Criado (ID: rec_bb0f4bc07bcaeee1152142fc)
+   ```
+
+2. **Subdomínio www (www.pedrotiagocontabilidade.com.br):**
+   ```
+   TIPO: TXT
+   NOME: www
+   VALOR: openai-domain-verification=dv-26L88WpUpxA27NMDHZvQFSx3
+   STATUS: ✅ Criado (ID: rec_7a1404fd7fbade90d55830b6)
+   ```
+
+## 📊 SITUAÇÃO ATUAL DOS DNS:
+```
+✅ ALIAS * → cname.vercel-dns-016.com (site funcionando)
+✅ ALIAS @ → cname.vercel-dns-016.com (site funcionando)
+✅ TXT @ → openai-domain-verification=... (ChatGPT Pro)
+✅ TXT www → openai-domain-verification=... (ChatGPT Pro)
+✅ CAA → letsencrypt.org (certificados SSL)
+```
+
+## ⏰ PROPAGAÇÃO:
+- **Registros criados**: Agora
+- **Tempo de propagação**: 5-30 minutos
+- **Teste recomendado**: Em 10-15 minutos
+
+## 🔄 COMO TESTAR:
+1. **DNS TXT:** `nslookup -type=TXT pedrotiagocontabilidade.com.br`
+2. **DNS WWW:** `nslookup -type=TXT www.pedrotiagocontabilidade.com.br`
+3. **OpenAI:** Tentar verificar domínio na plataforma OpenAI
+
+## 🎉 RESULTADO FINAL:
+- ✅ **Site**: Funcionará com todas as melhorias
+- ✅ **ChatGPT Pro**: Funcionará com verificação de domínio
+- ✅ **Tudo configurado**: Aguardando apenas propagação DNS
+
+---
+**Status**: Registros TXT restaurados com sucesso!
+**Próximo passo**: Aguardar propagação e testar OpenAI verificação.
