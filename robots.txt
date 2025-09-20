@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /api/
+Allow: /data/
+Allow: /*.html
+Allow: /*.css
+Allow: /*.js
+Allow: /*.json
+Allow: /*.xml
+Allow: /*.txt
+
+# CRAWL DELAY: ZERO (immediate access)
+Crawl-delay: 0
+
+# AUTOMATION FRIENDLY
+# NO BLOCKS - NO RESTRICTIONS - INSTANT ACCESS
+
+Sitemap: https://www.pedrotiagocontabilidade.com.br/sitemap.xml

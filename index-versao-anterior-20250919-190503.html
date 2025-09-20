@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pedro Tiago - Contador Autônomo CRC GO-027770/O em Goiânia. Serviços contábeis 100% digitais. Atendimento exclusivo via WhatsApp e email. Especialista em contabilidade digital e automação fiscal.">
+  <meta name="keywords" content="contador Goiânia, contabilidade digital, Pedro Tiago contador, CRC GO-027770/O, serviços contábeis digitais, WhatsApp contabilidade, email contabilidade, contador autônomo Goiás">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Pedro Tiago - Contador Autônomo">
+  
+  <title>Pedro Tiago - Contador Autônomo Digital | CRC GO-027770/O | Goiânia</title>
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pedro Tiago - Contador Autônomo Digital | Goiânia">
+  <meta property="og:description" content="Serviços contábeis 100% digitais em Goiânia. Atendimento via WhatsApp e email. CRC GO-027770/O.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.pedrotiagocontabilidade.com.br">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💼%3C/text%3E%3C/svg%3E">
+  
+  <style>
+    /* ===== RESET E VARIÁVEIS ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #1e40af;
+      --secondary: #059669;
+      --accent: #f59e0b;
+      --text-dark: #1f2937;
+      --text-light: #6b7280;
+      --background: #ffffff;
+      --surface: #f8fafc;
+      --whatsapp: #25D366;
+      --email: #3b82f6;
+      --success: #10b981;
+      --border: #e5e7eb;
+      --shadow: rgba(0, 0, 0, 0.1);
+      --gradient-primary: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #059669 100%);
+      --gradient-accent: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: var(--text-dark);
+      background: var(--background);
+      overflow-x: hidden;
+    }
+
+    /* ===== UTILITÁRIOS ===== */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .section {
+      padding: 4rem 0;
+    }
+
+    .text-center { text-align: center; }
+    .text-left { text-align: left; }
+    .mb-1 { margin-bottom: 0.5rem; }
+    .mb-2 { margin-bottom: 1rem; }
+    .mb-3 { margin-bottom: 1.5rem; }
+    .mb-4 { margin-bottom: 2rem; }
+    .mb-6 { margin-bottom: 3rem; }
+
+    /* ===== TIPOGRAFIA ===== */
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    h1 { font-size: 3rem; }
+    h2 { font-size: 2.5rem; }
+    h3 { font-size: 2rem; }
+    h4 { font-size: 1.5rem; }
+    h5 { font-size: 1.25rem; }
+    h6 { font-size: 1.125rem; }
+
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.7;
+    }
+
+    .lead {
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: var(--text-light);
+    }
+
+    /* ===== HEADER ===== */
+    .header {
+      background: var(--gradient-primary);
+      color: white;
+      padding: 2rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+      opacity: 0.3;
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .professional-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: var(--gradient-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 4px solid white;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+    }
+
+    .professional-photo:hover {
+      transform: scale(1.05);
+    }
+
+    .photo-initials {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .header-info h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      background: var(--gradient-accent);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .header-subtitle {
+      font-size: 1.25rem;
+      opacity: 0.9;
+      margin-bottom: 0.5rem;
+    }
+
+    .crc-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      font-weight: 600;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+    }
+
+    /* ===== HERO SECTION ===== */
+    .hero {
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      padding: 5rem 0;
+      text-align: center;
+    }
+
+    .hero h2 {
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-description {
+      font-size: 1.25rem;
+      color: var(--text-light);
+      max-width: 800px;
+      margin: 0 auto 3rem;
+    }
+
+    .communication-highlight {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 4rem;
+    }
+
+    .comm-card {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px var(--shadow);
+      border: 1px solid var(--border);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .comm-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gradient-primary);
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+
+    .comm-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .comm-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px var(--shadow);
+    }
+
+    .comm-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .comm-card.whatsapp .comm-icon { color: var(--whatsapp); }
+    .comm-card.email .comm-icon { color: var(--email); }
+
+    /* ===== SERVIÇOS ===== */
+    .services {
+      padding: 6rem 0;
+      background: white;
+    }
+
+    .services h2 {
+      text-align: center;
+      color: var(--primary);
+      margin-bottom: 3rem;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2.5rem;
+      margin-top: 3rem;
+    }
+
+    .service-card {
+      background: var(--surface);
+      padding: 3rem;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      transition: all 0.3s ease;
+      position: relative;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 50px var(--shadow);
+      border-color: var(--primary);
+    }
+
+    .service-icon {
+      font-size: 3rem;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+    }
+
+    .service-card h3 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .service-description {
+      color: var(--text-light);
+      margin-bottom: 2rem;
+      flex-grow: 1;
+    }
+
+    .service-features {
+      list-style: none;
+      margin-bottom: 2rem;
+    }
+
+    .service-features li {
+      padding: 0.5rem 0;
+      color: var(--success);
+      font-weight: 500;
+      position: relative;
+      padding-left: 1.5rem;
+    }
+
+    .service-features li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--success);
+      font-weight: bold;
+    }
+
+    .service-price {
+      background: var(--gradient-accent);
+      color: white;
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-top: auto;
+    }
+
+    /* ===== DIFERENCIAIS ===== */
+    .differentials {
+      background: var(--gradient-primary);
+      color: white;
+      padding: 6rem 0;
+    }
+
+    .differentials h2 {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .differentials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .differential-item {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 15px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .differential-item:hover {
+      background: rgba(255, 255, 255, 0.15);
+      transform: translateY(-5px);
+    }
+
+    .differential-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    /* ===== CONTATO ===== */
+    .contact {
+      background: white;
+      padding: 6rem 0;
+      text-align: center;
+    }
+
+    .contact h2 {
+      color: var(--primary);
+      margin-bottom: 2rem;
+    }
+
+    .contact-description {
+      font-size: 1.25rem;
+      color: var(--text-light);
+      max-width: 600px;
+      margin: 0 auto 3rem;
+    }
+
+    .contact-methods {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .contact-card {
+      background: var(--surface);
+      padding: 3rem;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      transition: all 0.3s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px var(--shadow);
+    }
+
+    .contact-card.whatsapp:hover { border-color: var(--whatsapp); }
+    .contact-card.email:hover { border-color: var(--email); }
+
+    .contact-card .comm-icon {
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-card.whatsapp .comm-icon { color: var(--whatsapp); }
+    .contact-card.email .comm-icon { color: var(--email); }
+
+    .contact-info {
+      font-size: 1.1rem;
+      color: var(--text-light);
+      margin-bottom: 2rem;
+    }
+
+    /* ===== BOTÕES ===== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .btn-whatsapp {
+      background: var(--whatsapp);
+      color: white;
+    }
+
+    .btn-whatsapp:hover {
+      background: #128C7E;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+      color: white;
+      text-decoration: none;
+    }
+
+    .btn-email {
+      background: var(--email);
+      color: white;
+    }
+
+    .btn-email:hover {
+      background: #1d4ed8;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+      color: white;
+      text-decoration: none;
+    }
+
+    /* ===== BOTÕES FLUTUANTES ===== */
+    .floating-buttons {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      z-index: 1000;
+    }
+
+    .floating-btn {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 1.5rem;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+
+    .floating-btn.whatsapp {
+      background: var(--whatsapp);
+      color: white;
+      animation: pulse-whatsapp 3s infinite;
+    }
+
+    .floating-btn.email {
+      background: var(--email);
+      color: white;
+    }
+
+    .floating-btn:hover {
+      transform: scale(1.1);
+      color: white;
+      text-decoration: none;
+    }
+
+    @keyframes pulse-whatsapp {
+      0% { box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3), 0 0 0 0 rgba(37, 211, 102, 0.7); }
+      50% { box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(37, 211, 102, 0.1); }
+      100% { box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3), 0 0 0 0 rgba(37, 211, 102, 0.7); }
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: var(--text-dark);
+      color: white;
+      padding: 3rem 0;
+      text-align: center;
+    }
+
+    .footer-content {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .footer h3 {
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .footer p {
+      opacity: 0.8;
+      margin-bottom: 0.5rem;
+    }
+
+    /* ===== RESPONSIVIDADE ===== */
+    @media (max-width: 768px) {
+      html { font-size: 14px; }
+      
+      .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+      }
+
+      .professional-photo {
+        width: 100px;
+        height: 100px;
+      }
+
+      .photo-initials {
+        font-size: 2rem;
+      }
+
+      .header-info h1 {
+        font-size: 2rem;
+      }
+
+      h1 { font-size: 2.5rem; }
+      h2 { font-size: 2rem; }
+      h3 { font-size: 1.5rem; }
+
+      .section { padding: 3rem 0; }
+      
+      .services-grid,
+      .differentials-grid,
+      .communication-highlight,
+      .contact-methods {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .service-card,
+      .comm-card,
+      .contact-card {
+        padding: 2rem;
+      }
+
+      .floating-buttons {
+        bottom: 1rem;
+        right: 1rem;
+      }
+
+      .floating-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 0 1rem; }
+      
+      .header-info h1 { font-size: 1.75rem; }
+      h2 { font-size: 1.75rem; }
+      
+      .service-card,
+      .comm-card,
+      .contact-card,
+      .differential-item {
+        padding: 1.5rem;
+      }
+    }
+
+    /* ===== ANIMAÇÕES ===== */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .stagger-1 { animation-delay: 0.1s; }
+    .stagger-2 { animation-delay: 0.2s; }
+    .stagger-3 { animation-delay: 0.3s; }
+    .stagger-4 { animation-delay: 0.4s; }
+
+    /* ===== ACESSIBILIDADE ===== */
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    /* ===== OTIMIZAÇÕES PARA AUTOMAÇÃO ===== */
+    /* Sem configurações de cache agressivo */
+    /* Sem bloqueios de user-agent */
+    /* Sem proteções anti-bot */
+    /* Estrutura HTML semântica para fácil parsing */
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="professional-photo">
+          <span class="photo-initials">PT</span>
+        </div>
+        <div class="header-info">
+          <h1>Pedro Tiago</h1>
+          <div class="header-subtitle">Contador Autônomo Digital</div>
+          <div class="crc-badge">CRC GO-027770/O</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2 class="fade-in">Contabilidade 100% Digital em Goiânia</h2>
+      <p class="hero-description fade-in stagger-1">
+        Serviços contábeis especializados para empresas que buscam eficiência, 
+        economia e tranquilidade. Atendimento personalizado via WhatsApp e email, 
+        com processos completamente digitais.
+      </p>
+      
+      <div class="communication-highlight">
+        <div class="comm-card whatsapp fade-in stagger-2">
+          <span class="comm-icon">💬</span>
+          <h3>WhatsApp Direto</h3>
+          <p>Comunicação rápida e eficiente pelo WhatsApp. Tire dúvidas, envie documentos e acompanhe seus processos contábeis de forma prática e segura.</p>
+        </div>
+        <div class="comm-card email fade-in stagger-3">
+          <span class="comm-icon">📧</span>
+          <h3>Email Profissional</h3>
+          <p>Receba relatórios detalhados, documentos oficiais e comunicações importantes diretamente no seu email, com total organização e controle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section class="services">
+    <div class="container">
+      <h2>Serviços Contábeis Digitais</h2>
+      <p class="text-center lead">Soluções completas para manter sua empresa sempre em dia</p>
+      
+      <div class="services-grid">
+        <div class="service-card fade-in stagger-1">
+          <div class="service-icon">📊</div>
+          <h3>Contabilidade Completa</h3>
+          <p class="service-description">
+            Escrituração contábil, balancetes mensais, demonstrações financeiras e toda documentação necessária para sua empresa funcionar dentro da lei.
+          </p>
+          <ul class="service-features">
+            <li>Escrituração digital mensal</li>
+            <li>Balancetes e demonstrações</li>
+            <li>Análise de resultados</li>
+            <li>Backup seguro em nuvem</li>
+            <li>Acesso via WhatsApp/Email</li>
+          </ul>
+          <div class="service-price">A partir de R$ 299/mês</div>
+        </div>
+
+        <div class="service-card fade-in stagger-2">
+          <div class="service-icon">🤖</div>
+          <h3>Automação Fiscal</h3>
+          <p class="service-description">
+            Automatização completa das obrigações fiscais, SPED, NFe e todas as declarações necessárias. Sua empresa sempre em dia, sem multas.
+          </p>
+          <ul class="service-features">
+            <li>SPED Fiscal e Contábil</li>
+            <li>NFe e NFCe automatizadas</li>
+            <li>Declarações em dia</li>
+            <li>Monitoramento de prazos</li>
+            <li>Zero multas fiscais</li>
+          </ul>
+          <div class="service-price">A partir de R$ 399/mês</div>
+        </div>
+
+        <div class="service-card fade-in stagger-3">
+          <div class="service-icon">💰</div>
+          <h3>Planejamento Tributário</h3>
+          <p class="service-description">
+            Análise tributária especializada para reduzir impostos legalmente. Otimização do regime tributário e economia real para sua empresa.
+          </p>
+          <ul class="service-features">
+            <li>Análise de enquadramento</li>
+            <li>Simulação de cenários</li>
+            <li>Redução legal de impostos</li>
+            <li>Consultoria especializada</li>
+            <li>Relatórios de economia</li>
+          </ul>
+          <div class="service-price">A partir de R$ 499/mês</div>
+        </div>
+
+        <div class="service-card fade-in stagger-4">
+          <div class="service-icon">📱</div>
+          <h3>Gestão Digital</h3>
+          <p class="service-description">
+            Organização completa da documentação empresarial em ambiente digital. Acesso fácil, seguro e organizado a todos os seus documentos contábeis.
+          </p>
+          <ul class="service-features">
+            <li>Documentos na nuvem</li>
+            <li>Organização digital</li>
+            <li>Acesso 24h via WhatsApp</li>
+            <li>Relatórios personalizados</li>
+            <li>Suporte contínuo</li>
+          </ul>
+          <div class="service-price">Incluído nos planos</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diferenciais -->
+  <section class="differentials">
+    <div class="container">
+      <h2>Por que escolher um Contador Digital?</h2>
+      
+      <div class="differentials-grid">
+        <div class="differential-item fade-in stagger-1">
+          <div class="differential-icon">👤</div>
+          <h3>Atendimento Personalizado</h3>
+          <p>Você fala diretamente comigo via WhatsApp ou email. Sem intermediários, sem call centers, sem complicações.</p>
+        </div>
+        
+        <div class="differential-item fade-in stagger-2">
+          <div class="differential-icon">⚡</div>
+          <h3>Agilidade Digital</h3>
+          <p>Processos 100% digitais que economizam tempo e dinheiro. Respostas rápidas e soluções eficientes.</p>
+        </div>
+        
+        <div class="differential-item fade-in stagger-3">
+          <div class="differential-icon">💰</div>
+          <h3>Economia Real</h3>
+          <p>Preços justos sem taxas abusivas. Foco na redução de impostos e otimização de custos para sua empresa.</p>
+        </div>
+        
+        <div class="differential-item fade-in stagger-4">
+          <div class="differential-icon">🛡️</div>
+          <h3>Segurança e Confiabilidade</h3>
+          <p>CRC ativo, experiência comprovada e total conformidade com as normas contábeis e fiscais.</p>
+        </div>
+        
+        <div class="differential-item fade-in stagger-1">
+          <div class="differential-icon">📊</div>
+          <h3>Transparência Total</h3>
+          <p>Relatórios claros, informações acessíveis e total transparência em todos os processos contábeis.</p>
+        </div>
+        
+        <div class="differential-item fade-in stagger-2">
+          <div class="differential-icon">🎯</div>
+          <h3>Foco em Resultados</h3>
+          <p>Especialização em contabilidade digital com foco na eficiência e crescimento do seu negócio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="contact">
+    <div class="container">
+      <h2>Entre em Contato</h2>
+      <p class="contact-description">
+        Pronto para modernizar a contabilidade da sua empresa? 
+        Entre em contato via WhatsApp ou email e vamos conversar sobre suas necessidades.
+      </p>
+      
+      <div class="contact-methods">
+        <div class="contact-card whatsapp fade-in stagger-1">
+          <div class="comm-icon">💬</div>
+          <h3>WhatsApp</h3>
+          <p class="contact-info">
+            Envie uma mensagem agora mesmo e tire suas dúvidas sobre contabilidade digital.
+          </p>
+          <a href="https://api.whatsapp.com/send/?phone=5562999948445&text=Olá Pedro Tiago! Encontrei seu site e gostaria de conversar sobre serviços contábeis para minha empresa." class="btn btn-whatsapp">
+            💬 Conversar no WhatsApp
+          </a>
+        </div>
+        
+        <div class="contact-card email fade-in stagger-2">
+          <div class="comm-icon">📧</div>
+          <h3>Email Profissional</h3>
+          <p class="contact-info">
+            Envie um email detalhado sobre suas necessidades contábeis e receba uma proposta personalizada.
+          </p>
+          <a href="mailto:contato@pedrotiagocontabilidade.com.br?subject=Contato via Site&body=Olá Pedro Tiago, encontrei seu site e gostaria de conversar sobre serviços contábeis." class="btn btn-email">
+            📧 Enviar Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <h3>Pedro Tiago - Contador Autônomo Digital</h3>
+        <p>CRC GO-027770/O • Goiânia, Goiás</p>
+        <p>Especialista em Contabilidade Digital e Automação Fiscal</p>
+        <p>Atendimento via WhatsApp: (62) 99994-8445</p>
+        <p>Email: contato@pedrotiagocontabilidade.com.br</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botões Flutuantes -->
+  <div class="floating-buttons">
+    <a href="https://api.whatsapp.com/send/?phone=5562999948445&text=Olá Pedro Tiago! Encontrei seu site e gostaria de conversar sobre serviços contábeis para minha empresa." class="floating-btn whatsapp" title="WhatsApp">
+      💬
+    </a>
+    <a href="mailto:contato@pedrotiagocontabilidade.com.br?subject=Contato via Site&body=Olá Pedro Tiago, encontrei seu site e gostaria de conversar sobre serviços contábeis." class="floating-btn email" title="Email">
+      📧
+    </a>
+  </div>
+
+  <script>
+    // Animações de entrada
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, observerOptions);
+
+    // Observar elementos para animação
+    document.querySelectorAll('.service-card, .differential-item, .comm-card, .contact-card').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Timestamp para debugging
+    console.log('Site carregado em:', new Date().toISOString());
+    console.log('Versão: Site Novo Otimizado - 100% Digital');
+    
+    // Smooth scroll para links internos
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Otimização para automação - sem bloqueios
+    window.automationFriendly = true;
+    window.siteVersion = 'novo-otimizado-digital';
+  </script>
+</body>
+</html>

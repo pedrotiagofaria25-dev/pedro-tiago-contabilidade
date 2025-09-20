@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pedro Tiago Contabilidade em Goiânia - Contador CRC GO-027770/O especialista em automação fiscal, SPED, NFe e contabilidade digital. Economize até 30% em impostos com processos 100% digitais." />
+  <meta name="keywords" content="contabilidade Goiânia, contador Goiânia, contabilidade digital, automação fiscal, SPED, NFe, Pedro Tiago, CRC GO-027770/O, Calima Web, Makrosystem, contabilidade empresarial, declaração imposto de renda, obrigações fiscais, escrituração contábil, contador digital Goiânia, automação contábil GO" />
+  
+  <title>Pedro Tiago Contabilidade em Goiânia - Contador CRC GO-027770/O | Automação Fiscal e SPED</title>
+  
+  <!-- CSS Melhorado Inline -->
+  <style>
+    /* Pedro Tiago Contabilidade - CSS Melhorado */
+    :root {
+      --primary-color: #2563eb;
+      --secondary-color: #16a34a;
+      --accent-color: #dc2626;
+      --text-primary: #1f2937;
+      --text-secondary: #6b7280;
+      --background: #ffffff;
+      --surface: #f9fafb;
+      --gold: #FFD700;
+      --green: #4CAF50;
+      --whatsapp: #25D366;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        line-height: 1.6;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        color: white;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    /* ===== MELHORIAS HERO SECTION ===== */
+    .hero-header {
+      margin-bottom: 3rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .hero-photo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      margin-bottom: 3rem;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 25px;
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 215, 0, 0.2);
+    }
+
+    .professional-photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 5px solid var(--gold);
+      box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.4),
+        0 0 0 10px rgba(255, 215, 0, 0.1);
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .professional-photo:hover {
+      transform: scale(1.05);
+      box-shadow: 
+        0 15px 40px rgba(0, 0, 0, 0.5),
+        0 0 0 15px rgba(255, 215, 0, 0.15);
+    }
+
+    .professional-photo::before {
+      content: '';
+      position: absolute;
+      inset: -8px;
+      border-radius: 50%;
+      background: linear-gradient(45deg, var(--gold), #FFA500, var(--gold));
+      z-index: -1;
+      animation: rotate 3s linear infinite;
+    }
+
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .photo-placeholder {
+      font-size: 3rem;
+      font-weight: bold;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .hero-text {
+      flex: 1;
+      text-align: left;
+    }
+
+    .hero-text h1 {
+      font-size: 3.2rem;
+      margin-bottom: 0.8rem;
+      background: linear-gradient(135deg, var(--gold), #FFA500, var(--gold));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.1;
+      font-weight: 800;
+      text-shadow: none;
+    }
+
+    .professional-title {
+      font-size: 1.5rem;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 1rem;
+      opacity: 0.95;
+    }
+
+    .hero-section h2 {
+      font-size: 2.4rem;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+      font-weight: bold;
+      line-height: 1.2;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .hero-section > p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      opacity: 0.95;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .hero-benefits {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 4rem;
+    }
+
+    .hero-benefits .benefit {
+      background: rgba(255, 215, 0, 0.15);
+      color: var(--gold);
+      padding: 0.8rem 1.5rem;
+      border-radius: 25px;
+      font-weight: 600;
+      border: 2px solid rgba(255, 215, 0, 0.3);
+      font-size: 1rem;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+    }
+
+    .hero-benefits .benefit:hover {
+      background: rgba(255, 215, 0, 0.25);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+    }
+
+    /* ===== MELHORIAS CARDS DE SERVIÇOS ===== */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      margin: 4rem 0;
+      padding: 0 2rem;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .service-card {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 2.5rem;
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+      min-height: 380px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--gold), #FFA500);
+      transform: scaleX(0);
+      transition: transform 0.4s ease;
+    }
+
+    .service-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      background: rgba(255, 255, 255, 0.12);
+      box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.3),
+        0 0 0 1px rgba(255, 215, 0, 0.2);
+    }
+
+    .service-card h3 {
+      font-size: 1.6rem;
+      margin-bottom: 1.2rem;
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    .service-card p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+      opacity: 0.9;
+    }
+
+    .service-benefit {
+      background: rgba(76, 175, 80, 0.15);
+      color: var(--green);
+      padding: 1rem;
+      border-radius: 12px;
+      margin: 1.5rem 0;
+      border: 1px solid rgba(76, 175, 80, 0.3);
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .service-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: auto;
+      padding-top: 1rem;
+    }
+
+    .feature {
+      background: rgba(255, 215, 0, 0.15);
+      color: var(--gold);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      border: 1px solid rgba(255, 215, 0, 0.3);
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .feature:hover {
+      background: rgba(255, 215, 0, 0.25);
+      transform: scale(1.05);
+    }
+
+    /* ===== WHATSAPP BUTTON ===== */
+    .whatsapp-floating {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      z-index: 1001;
+    }
+
+    .whatsapp-float-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      background: linear-gradient(135deg, var(--whatsapp), #128C7E);
+      color: white;
+      padding: 1.2rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 
+        0 8px 25px rgba(37, 211, 102, 0.4),
+        0 0 0 0 rgba(37, 211, 102, 0.7);
+      transition: all 0.3s ease;
+      animation: pulse-whatsapp 3s infinite;
+      backdrop-filter: blur(10px);
+    }
+
+    .whatsapp-float-btn:hover {
+      background: linear-gradient(135deg, #128C7E, #0d7a6b);
+      transform: translateY(-5px);
+      box-shadow: 
+        0 15px 35px rgba(37, 211, 102, 0.6),
+        0 0 0 10px rgba(37, 211, 102, 0.1);
+      animation: none;
+      color: white;
+      text-decoration: none;
+    }
+
+    @keyframes pulse-whatsapp {
+      0% {
+        box-shadow: 
+          0 8px 25px rgba(37, 211, 102, 0.4),
+          0 0 0 0 rgba(37, 211, 102, 0.7);
+      }
+      50% {
+        box-shadow: 
+          0 12px 35px rgba(37, 211, 102, 0.6),
+          0 0 0 15px rgba(37, 211, 102, 0.1);
+      }
+      100% {
+        box-shadow: 
+          0 8px 25px rgba(37, 211, 102, 0.4),
+          0 0 0 0 rgba(37, 211, 102, 0.7);
+      }
+    }
+
+    .whatsapp-icon {
+      font-size: 1.8rem;
+    }
+
+    .whatsapp-text {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    /* ===== RESPONSIVIDADE ===== */
+    @media (max-width: 1024px) {
+      .hero-photo {
+        gap: 2rem;
+        padding: 1.5rem;
+      }
+      
+      .professional-photo {
+        width: 120px;
+        height: 120px;
+      }
+      
+      .hero-text h1 {
+        font-size: 2.8rem;
+      }
+      
+      .services {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-photo {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem;
+      }
+
+      .hero-text {
+        text-align: center;
+      }
+
+      .professional-photo {
+        width: 110px;
+        height: 110px;
+      }
+
+      .hero-text h1 {
+        font-size: 2.2rem;
+        text-align: center;
+      }
+
+      .professional-title {
+        font-size: 1.2rem;
+        text-align: center;
+      }
+
+      .hero-section h2 {
+        font-size: 1.9rem;
+      }
+
+      .hero-section > p {
+        font-size: 1.1rem;
+      }
+
+      .hero-benefits {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .hero-benefits .benefit {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+      }
+
+      .services {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+      }
+
+      .service-card {
+        padding: 2rem;
+        min-height: 350px;
+      }
+
+      .whatsapp-float-btn {
+        padding: 1rem;
+        bottom: 15px;
+        right: 15px;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        justify-content: center;
+      }
+
+      .whatsapp-text {
+        display: none;
+      }
+
+      .whatsapp-icon {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-text h1 {
+        font-size: 1.8rem;
+      }
+      
+      .hero-section h2 {
+        font-size: 1.6rem;
+      }
+      
+      .professional-photo {
+        width: 90px;
+        height: 90px;
+      }
+      
+      .photo-placeholder {
+        font-size: 2.2rem;
+      }
+      
+      .service-card {
+        padding: 1.5rem;
+        min-height: 320px;
+      }
+    }
+
+    /* Seções gerais */
+    .section {
+        padding: 4rem 0;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .section h2 {
+        text-align: center;
+        margin-bottom: 3rem;
+        color: var(--gold);
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+
+    .section p {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+        opacity: 0.9;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 600;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        margin-bottom: 1rem;
+        line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero-header">
+    <div class="hero-photo">
+      <div class="professional-photo">
+        <div class="photo-placeholder">PT</div>
+      </div>
+      <div class="hero-text">
+        <h1>Pedro Tiago Contabilidade</h1>
+        <div class="professional-title">Contador CRC GO-027770/O</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-section">
+    <div class="container">
+      <h2>Reduza impostos e automatize sua contabilidade sem dor de cabeça</h2>
+      <p>Especialista em Contabilidade Digital • Sua empresa sempre em dia</p>
+      
+      <div class="hero-benefits">
+        <div class="benefit">✓ Sem multas fiscais</div>
+        <div class="benefit">✓ Impostos otimizados</div>
+        <div class="benefit">✓ Relatórios em tempo real</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="services">
+    <div class="service-card">
+      <h3>💼 Contabilidade Digital</h3>
+      <p>Sua empresa 100% digital e organizada</p>
+      <div class="service-benefit">
+        🎯 Resultado: Processos 80% mais rápidos, 0% de multas
+      </div>
+      <div class="service-features">
+        <div class="feature">• Documentos na nuvem</div>
+        <div class="feature">• Acesso 24h</div>
+        <div class="feature">• Processos automatizados</div>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <h3>🤖 Automação Fiscal</h3>
+      <p>Sua empresa sem multas e obrigações esquecidas</p>
+      <div class="service-benefit">
+        🎯 Resultado: Compliance 100%, Multas 0%
+      </div>
+      <div class="service-features">
+        <div class="feature">• Impostos em dia</div>
+        <div class="feature">• NFes automáticas</div>
+        <div class="feature">• Alertas preventivos</div>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <h3>📊 Relatórios Inteligentes</h3>
+      <p>Decida com números claros em tempo real</p>
+      <div class="service-benefit">
+        🎯 Resultado: Decisões baseadas em dados reais
+      </div>
+      <div class="service-features">
+        <div class="feature">• Gráficos simples</div>
+        <div class="feature">• Indicadores claros</div>
+        <div class="feature">• Comparações mensais</div>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <h3>📝 Consultoria Especializada</h3>
+      <p>Pague menos impostos legalmente</p>
+      <div class="service-benefit">
+        🎯 Resultado: Economia de até 30% em impostos
+      </div>
+      <div class="service-features">
+        <div class="feature">• Planejamento tributário</div>
+        <div class="feature">• Análise de enquadramento</div>
+        <div class="feature">• Otimização fiscal</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WhatsApp Button -->
+  <div class="whatsapp-floating">
+    <a href="https://api.whatsapp.com/send/?phone=5562999948445&text=Olá Pedro Tiago! Encontrei seu site e gostaria de conversar sobre contabilidade para minha empresa." class="whatsapp-float-btn">
+      <span class="whatsapp-icon">💬</span>
+      <span class="whatsapp-text">WhatsApp</span>
+    </a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+name = "pedro-tiago-contabilidade"
+compatibility_date = "2024-09-17"
+
+[env.production]
+name = "pedro-tiago-contabilidade"
+
+[[env.production.routes]]
+pattern = "www.pedrotiagocontabilidade.com.br/*"
+zone_name = "pedrotiagocontabilidade.com.br"
+
+[build]
+command = "npm run build"
+destination = "dist"

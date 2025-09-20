@@ -1,0 +1,42 @@
+# 🎯 MONITORAMENTO DNS - PROPAGAÇÃO EM ANDAMENTO
+
+## ✅ CONFIGURAÇÃO REALIZADA COM SUCESSO:
+- **Nameservers**: ns1.vercel-dns.com, ns2.vercel-dns.com ✅
+- **Deploy Vercel**: Todas melhorias implementadas ✅
+- **Status**: Aguardando propagação DNS ⏳
+
+## ⏰ TEMPO DE PROPAGAÇÃO:
+- **Oficial**: 1h59m45s (registro.br)
+- **Prática**: 10-60 minutos típicos
+- **Status atual**: DNS ainda no IP antigo (76.76.21.21)
+
+## 🔄 COMO MONITORAR:
+
+### **Comando para testar:**
+```bash
+nslookup www.pedrotiagocontabilidade.com.br 8.8.8.8
+```
+
+### **Sinais de sucesso:**
+1. **DNS mudou**: IP será diferente de 76.76.21.21
+2. **Site carrega**: HTTP 200 em vez de 401
+3. **Funcionalidades**: Hero, preços, WhatsApp visíveis
+
+## 📱 TESTE RÁPIDO:
+A cada 15-30 minutos, acesse:
+**https://www.pedrotiagocontabilidade.com.br**
+
+## ✅ QUANDO FUNCIONAR, VOCÊ VERÁ:
+- ✅ Hero section profissional com foto
+- ✅ Seção "Sobre Pedro Tiago"
+- ✅ Tabela de preços (R$ 299/499/799+)
+- ✅ Botão WhatsApp flutuante
+- ✅ Design responsivo otimizado
+- ✅ Performance melhorada
+
+## 🎉 RESULTADO FINAL:
+**Seu site estará completamente otimizado e funcional!**
+
+---
+**Atualização**: Nameservers configurados às 21:50h
+**Expectativa**: Funcionando entre 22:00h - 23:50h

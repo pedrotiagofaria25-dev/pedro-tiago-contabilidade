@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pedro Tiago - Contador Autônomo CRC GO-027770/O em Goiânia. Especialista em contabilidade digital, automação fiscal e otimização tributária. Atendimento via WhatsApp e email." />
+  <meta name="keywords" content="contador autônomo Goiânia, contabilidade digital, Pedro Tiago contador, CRC GO-027770/O, automação fiscal, WhatsApp contabilidade, email contabilidade, contador pessoa física Goiânia" />
+  
+  <title>Pedro Tiago - Contador Autônomo em Goiânia | CRC GO-027770/O | WhatsApp & Email</title>
+  
+  <!-- CSS Otimizado para Contador Autônomo -->
+  <style>
+    /* Pedro Tiago - Contador Autônomo - CSS Otimizado */
+    :root {
+      --primary-blue: #1e40af;
+      --secondary-green: #059669;
+      --accent-gold: #f59e0b;
+      --text-dark: #1f2937;
+      --text-light: #6b7280;
+      --background: #ffffff;
+      --surface: #f8fafc;
+      --whatsapp: #25D366;
+      --email: #3b82f6;
+      --success: #10b981;
+      --gradient-primary: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #059669 100%);
+      --gradient-gold: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        line-height: 1.6;
+        background: var(--gradient-primary);
+        min-height: 100vh;
+        color: white;
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    /* ===== HEADER PROFISSIONAL ===== */
+    .professional-header {
+      padding: 3rem 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .professional-header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      z-index: -1;
+    }
+
+    .professional-photo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .professional-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: var(--gradient-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 4px solid white;
+      box-shadow: 
+        0 15px 35px rgba(0, 0, 0, 0.3),
+        0 0 0 8px rgba(245, 158, 11, 0.2);
+      position: relative;
+      transition: all 0.4s ease;
+    }
+
+    .professional-photo:hover {
+      transform: scale(1.05) rotate(5deg);
+      box-shadow: 
+        0 20px 45px rgba(0, 0, 0, 0.4),
+        0 0 0 12px rgba(245, 158, 11, 0.3);
+    }
+
+    .photo-initials {
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .professional-info h1 {
+      font-size: 3.5rem;
+      font-weight: 900;
+      margin-bottom: 0.5rem;
+      background: var(--gradient-gold);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.1;
+    }
+
+    .professional-title {
+      font-size: 1.8rem;
+      color: rgba(255, 255, 255, 0.9);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .crc-number {
+      font-size: 1.2rem;
+      color: var(--accent-gold);
+      font-weight: 700;
+      background: rgba(245, 158, 11, 0.1);
+      padding: 0.5rem 1.5rem;
+      border-radius: 25px;
+      display: inline-block;
+      border: 2px solid rgba(245, 158, 11, 0.3);
+    }
+
+    /* ===== HERO SECTION OTIMIZADA ===== */
+    .hero-section {
+      padding: 4rem 0;
+      text-align: center;
+    }
+
+    .hero-section h2 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+      color: white;
+      line-height: 1.2;
+    }
+
+    .hero-subtitle {
+      font-size: 1.4rem;
+      margin-bottom: 3rem;
+      opacity: 0.9;
+      font-weight: 500;
+    }
+
+    .communication-focus {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 4rem;
+    }
+
+    .communication-method {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      min-width: 280px;
+      transition: all 0.3s ease;
+    }
+
+    .communication-method:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.15);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    }
+
+    .communication-method.whatsapp {
+      border-color: var(--whatsapp);
+    }
+
+    .communication-method.email {
+      border-color: var(--email);
+    }
+
+    .communication-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .communication-method h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: white;
+    }
+
+    .communication-method p {
+      opacity: 0.9;
+      font-size: 1.1rem;
+    }
+
+    /* ===== SERVIÇOS PARA CONTADOR AUTÔNOMO ===== */
+    .services-section {
+      padding: 5rem 0;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .services-section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: var(--accent-gold);
+      font-weight: 800;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2.5rem;
+      margin-bottom: 4rem;
+    }
+
+    .service-card {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 3rem;
+      border-radius: 25px;
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: var(--gradient-gold);
+      transform: scaleX(0);
+      transition: transform 0.4s ease;
+    }
+
+    .service-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      background: rgba(255, 255, 255, 0.12);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    }
+
+    .service-icon {
+      font-size: 3.5rem;
+      margin-bottom: 1.5rem;
+      display: block;
+      color: var(--accent-gold);
+    }
+
+    .service-card h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      color: white;
+      font-weight: 700;
+    }
+
+    .service-card p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+      line-height: 1.6;
+    }
+
+    .service-benefits {
+      list-style: none;
+      margin-bottom: 2rem;
+    }
+
+    .service-benefits li {
+      padding: 0.5rem 0;
+      color: var(--success);
+      font-weight: 600;
+    }
+
+    .service-benefits li::before {
+      content: '✓ ';
+      color: var(--success);
+      font-weight: bold;
+      margin-right: 0.5rem;
+    }
+
+    .service-price {
+      background: var(--gradient-gold);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 15px;
+      font-weight: 700;
+      font-size: 1.2rem;
+      text-align: center;
+      margin-top: auto;
+    }
+
+    /* ===== DIFERENCIAIS DO CONTADOR AUTÔNOMO ===== */
+    .differentials-section {
+      padding: 5rem 0;
+      text-align: center;
+    }
+
+    .differentials-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: white;
+      font-weight: 800;
+    }
+
+    .differentials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .differential-item {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 2.5rem 2rem;
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .differential-item:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .differential-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--accent-gold);
+    }
+
+    .differential-item h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: white;
+      font-weight: 600;
+    }
+
+    .differential-item p {
+      opacity: 0.9;
+      font-size: 1rem;
+    }
+
+    /* ===== BOTÕES DE COMUNICAÇÃO ===== */
+    .communication-buttons {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      z-index: 1000;
+    }
+
+    .comm-button {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 15px 25px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+      min-width: 180px;
+      justify-content: center;
+    }
+
+    .whatsapp-btn {
+      background: linear-gradient(135deg, var(--whatsapp), #128C7E);
+      color: white;
+      animation: pulse-whatsapp 3s infinite;
+    }
+
+    .whatsapp-btn:hover {
+      background: linear-gradient(135deg, #128C7E, #0d7a6b);
+      transform: translateY(-3px);
+      box-shadow: 0 15px 35px rgba(37, 211, 102, 0.4);
+      animation: none;
+      color: white;
+      text-decoration: none;
+    }
+
+    .email-btn {
+      background: linear-gradient(135deg, var(--email), #1d4ed8);
+      color: white;
+    }
+
+    .email-btn:hover {
+      background: linear-gradient(135deg, #1d4ed8, #1e40af);
+      transform: translateY(-3px);
+      box-shadow: 0 15px 35px rgba(59, 130, 246, 0.4);
+      color: white;
+      text-decoration: none;
+    }
+
+    @keyframes pulse-whatsapp {
+      0% {
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3), 0 0 0 0 rgba(37, 211, 102, 0.7);
+      }
+      50% {
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(37, 211, 102, 0.1);
+      }
+      100% {
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3), 0 0 0 0 rgba(37, 211, 102, 0.7);
+      }
+    }
+
+    .comm-icon {
+      font-size: 1.5rem;
+    }
+
+    /* ===== FOOTER PROFISSIONAL ===== */
+    .footer {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 3rem 0;
+      text-align: center;
+      margin-top: 5rem;
+    }
+
+    .footer-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .footer h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--accent-gold);
+    }
+
+    .footer p {
+      opacity: 0.8;
+      margin-bottom: 1rem;
+    }
+
+    .footer-contact {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: white;
+      text-decoration: none;
+      opacity: 0.9;
+      transition: opacity 0.3s ease;
+    }
+
+    .footer-contact-item:hover {
+      opacity: 1;
+      color: var(--accent-gold);
+      text-decoration: none;
+    }
+
+    /* ===== RESPONSIVIDADE ===== */
+    @media (max-width: 768px) {
+      .professional-photo-container {
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .professional-photo {
+        width: 120px;
+        height: 120px;
+      }
+
+      .photo-initials {
+        font-size: 2.8rem;
+      }
+
+      .professional-info h1 {
+        font-size: 2.5rem;
+      }
+
+      .professional-title {
+        font-size: 1.4rem;
+      }
+
+      .hero-section h2 {
+        font-size: 2.2rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.2rem;
+      }
+
+      .communication-focus {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .communication-method {
+        min-width: 100%;
+        max-width: 400px;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .service-card {
+        padding: 2rem;
+      }
+
+      .differentials-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .communication-buttons {
+        bottom: 20px;
+        right: 20px;
+        flex-direction: column-reverse;
+      }
+
+      .comm-button {
+        min-width: 60px;
+        padding: 15px;
+        border-radius: 50%;
+        justify-content: center;
+      }
+
+      .comm-button span:not(.comm-icon) {
+        display: none;
+      }
+
+      .comm-icon {
+        font-size: 1.8rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .professional-info h1 {
+        font-size: 2rem;
+      }
+
+      .hero-section h2 {
+        font-size: 1.8rem;
+      }
+
+      .services-section h2,
+      .differentials-section h2 {
+        font-size: 2rem;
+      }
+
+      .container {
+        padding: 0 15px;
+      }
+    }
+
+    /* Animações suaves */
+    .fade-in {
+      animation: fadeIn 0.8s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Profissional -->
+  <header class="professional-header fade-in">
+    <div class="container">
+      <div class="professional-photo-container">
+        <div class="professional-photo">
+          <span class="photo-initials">PT</span>
+        </div>
+        <div class="professional-info">
+          <h1>Pedro Tiago</h1>
+          <div class="professional-title">Contador Autônomo</div>
+          <div class="crc-number">CRC GO-027770/O</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section fade-in">
+    <div class="container">
+      <h2>Contabilidade Digital Personalizada para Sua Empresa</h2>
+      <p class="hero-subtitle">Atendimento direto via WhatsApp e Email • Sem burocracia, com resultados</p>
+      
+      <div class="communication-focus">
+        <div class="communication-method whatsapp">
+          <span class="communication-icon">💬</span>
+          <h3>WhatsApp Direto</h3>
+          <p>Tire dúvidas, envie documentos e acompanhe sua contabilidade pelo WhatsApp. Resposta rápida e atendimento personalizado.</p>
+        </div>
+        <div class="communication-method email">
+          <span class="communication-icon">📧</span>
+          <h3>Email Profissional</h3>
+          <p>Receba relatórios, documentos oficiais e comunicações importantes diretamente no seu email.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section class="services-section fade-in">
+    <div class="container">
+      <h2>Serviços Especializados</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <span class="service-icon">💼</span>
+          <h3>Contabilidade Completa</h3>
+          <p>Escrituração contábil, balancetes, demonstrações financeiras e toda documentação necessária para sua empresa.</p>
+          <ul class="service-benefits">
+            <li>Escrituração digital</li>
+            <li>Balancetes mensais</li>
+            <li>Demonstrações financeiras</li>
+            <li>Backup em nuvem</li>
+          </ul>
+          <div class="service-price">A partir de R$ 299/mês</div>
+        </div>
+
+        <div class="service-card">
+          <span class="service-icon">🤖</span>
+          <h3>Automação Fiscal</h3>
+          <p>Automatização de obrigações fiscais, SPED, NFe e tudo que sua empresa precisa para estar sempre em dia.</p>
+          <ul class="service-benefits">
+            <li>SPED automatizado</li>
+            <li>NFe e NFCe</li>
+            <li>Obrigações em dia</li>
+            <li>Zero multas</li>
+          </ul>
+          <div class="service-price">A partir de R$ 399/mês</div>
+        </div>
+
+        <div class="service-card">
+          <span class="service-icon">📊</span>
+          <h3>Consultoria Tributária</h3>
+          <p>Planejamento tributário personalizado para reduzir impostos legalmente e otimizar a carga fiscal da sua empresa.</p>
+          <ul class="service-benefits">
+            <li>Análise tributária</li>
+            <li>Planejamento fiscal</li>
+            <li>Economia de impostos</li>
+            <li>Consultoria especializada</li>
+          </ul>
+          <div class="service-price">A partir de R$ 499/mês</div>
+        </div>
+
+        <div class="service-card">
+          <span class="service-icon">📱</span>
+          <h3>Atendimento Digital</h3>
+          <p>Suporte completo via WhatsApp e email, com acesso a documentos na nuvem e relatórios em tempo real.</p>
+          <ul class="service-benefits">
+            <li>WhatsApp Business</li>
+            <li>Email profissional</li>
+            <li>Documentos na nuvem</li>
+            <li>Relatórios online</li>
+          </ul>
+          <div class="service-price">Incluído em todos os planos</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diferenciais -->
+  <section class="differentials-section fade-in">
+    <div class="container">
+      <h2>Por que escolher um Contador Autônomo?</h2>
+      <div class="differentials-grid">
+        <div class="differential-item">
+          <span class="differential-icon">👤</span>
+          <h3>Atendimento Personalizado</h3>
+          <p>Você fala diretamente comigo, sem intermediários ou call centers.</p>
+        </div>
+        <div class="differential-item">
+          <span class="differential-icon">⚡</span>
+          <h3>Agilidade</h3>
+          <p>Respostas rápidas e soluções eficientes para suas demandas contábeis.</p>
+        </div>
+        <div class="differential-item">
+          <span class="differential-icon">💰</span>
+          <h3>Custo-Benefício</h3>
+          <p>Preços justos sem taxas abusivas de grandes escritórios.</p>
+        </div>
+        <div class="differential-item">
+          <span class="differential-icon">🎯</span>
+          <h3>Foco no Resultado</h3>
+          <p>Especialização em redução de impostos e otimização fiscal.</p>
+        </div>
+        <div class="differential-item">
+          <span class="differential-icon">📱</span>
+          <h3>Tecnologia</h3>
+          <p>Processos digitais modernos com acesso via WhatsApp e email.</p>
+        </div>
+        <div class="differential-item">
+          <span class="differential-icon">🛡️</span>
+          <h3>Confiabilidade</h3>
+          <p>CRC ativo e experiência comprovada em contabilidade digital.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer fade-in">
+    <div class="container">
+      <div class="footer-content">
+        <h3>Pedro Tiago - Contador Autônomo</h3>
+        <p>CRC GO-027770/O • Goiânia, Goiás</p>
+        <p>Especialista em Contabilidade Digital e Automação Fiscal</p>
+        
+        <div class="footer-contact">
+          <a href="https://api.whatsapp.com/send/?phone=5562999948445&text=Olá Pedro Tiago! Encontrei seu site e gostaria de conversar sobre contabilidade para minha empresa." class="footer-contact-item">
+            <span>💬</span>
+            <span>(62) 99994-8445</span>
+          </a>
+          <a href="mailto:contato@pedrotiagocontabilidade.com.br" class="footer-contact-item">
+            <span>📧</span>
+            <span>contato@pedrotiagocontabilidade.com.br</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botões de Comunicação Flutuantes -->
+  <div class="communication-buttons">
+    <a href="https://api.whatsapp.com/send/?phone=5562999948445&text=Olá Pedro Tiago! Encontrei seu site e gostaria de conversar sobre contabilidade para minha empresa." class="comm-button whatsapp-btn">
+      <span class="comm-icon">💬</span>
+      <span>WhatsApp</span>
+    </a>
+    <a href="mailto:contato@pedrotiagocontabilidade.com.br?subject=Contato via Site&body=Olá Pedro Tiago, encontrei seu site e gostaria de conversar sobre serviços contábeis." class="comm-button email-btn">
+      <span class="comm-icon">📧</span>
+      <span>Email</span>
+    </a>
+  </div>
+
+  <script>
+    // Adicionar animações suaves ao scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, observerOptions);
+
+    // Observar elementos para animação
+    document.querySelectorAll('.service-card, .differential-item').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Adicionar timestamp para forçar atualização de cache
+    console.log('Site atualizado em:', new Date().toISOString());
+  </script>
+</body>
+</html>

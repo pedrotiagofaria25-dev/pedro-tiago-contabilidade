@@ -1,0 +1,68 @@
+# 🔧 CORREÇÃO DNS TXT - REGISTRO.BR
+
+## ❌ ERRO IDENTIFICADO:
+Você usou: `@.pedrotiagocontabilidade.com.br`
+Erro: "Nome do record inválido - @"
+
+## ✅ SOLUÇÃO CORRETA:
+
+### **OPÇÃO 1 - CAMPO NOME VAZIO (RECOMENDADO):**
+```
+Tipo: TXT
+Nome: [DEIXAR COMPLETAMENTE VAZIO]
+Dados: openai-domain-verification=dv-26L88WpUpxA27NMDHZvQFSx3
+```
+
+### **OPÇÃO 2 - SÓ O DOMÍNIO:**
+```
+Tipo: TXT
+Nome: pedrotiagocontabilidade.com.br
+Dados: openai-domain-verification=dv-26L88WpUpxA27NMDHZvQFSx3
+```
+
+### **OPÇÃO 3 - COM PONTO NO FINAL:**
+```
+Tipo: TXT
+Nome: pedrotiagocontabilidade.com.br.
+Dados: openai-domain-verification=dv-26L88WpUpxA27NMDHZvQFSx3
+```
+
+---
+
+## 🚀 PASSO A PASSO CORRETO:
+
+1. **REMOVER O REGISTRO ATUAL** (com erro)
+   - Clique no "X" para remover o registro incorreto
+
+2. **ADICIONAR NOVO REGISTRO:**
+   - Clique em "Nova entrada"
+   - Tipo: TXT
+   - Nome: [DEIXAR VAZIO] ← IMPORTANTE!
+   - Dados: openai-domain-verification=dv-26L88WpUpxA27NMDHZvQFSx3
+   - Clique em "ADICIONAR"
+
+3. **SALVAR ALTERAÇÕES:**
+   - Clique em "SALVAR ALTERAÇÕES"
+   - Aguarde confirmação
+
+---
+
+## ⚠️ DICAS IMPORTANTES:
+
+- **NÃO use @** - Registro.br não aceita
+- **NÃO ponha prefixos** como www ou @
+- **Campo Nome VAZIO** = registro para domínio raiz
+- **Copie o valor EXATO**: `openai-domain-verification=dv-26L88WpUpxA27NMDHZvQFSx3`
+
+---
+
+## ✅ VERIFICAÇÃO:
+Após salvar, aguarde 1-2 horas e teste:
+```bash
+nslookup -type=TXT pedrotiagocontabilidade.com.br
+```
+
+Deve aparecer:
+```
+pedrotiagocontabilidade.com.br text = "openai-domain-verification=dv-26L88WpUpxA27NMDHZvQFSx3"
+```

@@ -1,0 +1,35 @@
+{
+  "ai_automation": {
+    "enabled": true,
+    "platforms": {
+      "vercel": {
+        "primary": true,
+        "token_required": true,
+        "commands": [
+          "vercel --prod --token {token} --yes"
+        ]
+      },
+      "gitlab": {
+        "backup": true,
+        "token_required": true,
+        "commands": [
+          "git push gitlab main",
+          "curl --header 'PRIVATE-TOKEN: {token}' -X POST 'https://gitlab.com/api/v4/projects/{project_id}/pipeline'"
+        ]
+      },
+      "github": {
+        "backup": true,
+        "token_required": true,
+        "commands": [
+          "git push origin main"
+        ]
+      }
+    },
+    "blocked_platforms": [
+      "cloudflare_manual",
+      "netlify_manual"
+    ],
+    "automation_level": "100%",
+    "manual_intervention": "never"
+  }
+}
