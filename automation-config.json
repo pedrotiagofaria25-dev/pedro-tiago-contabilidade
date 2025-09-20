@@ -1,0 +1,73 @@
+{
+  "name": "Pedro Tiago Contabilidade - Automation Config",
+  "version": "1.0.0",
+  "description": "Configuração anti-bloqueio para automações IA",
+
+  "domains": {
+    "primary": "www.pedrotiagocontabilidade.com.br",
+    "api": "api.pedrotiagocontabilidade.com.br",
+    "automation": "automation.pedrotiagocontabilidade.com.br",
+    "github": "pedrotiagofaria25-dev.github.io/pedro-tiago-contabilidade",
+    "dev": "dev.pedrotiagocontabilidade.com.br"
+  },
+
+  "bypass_urls": [
+    "https://api.pedrotiagocontabilidade.com.br/",
+    "https://automation.pedrotiagocontabilidade.com.br/",
+    "https://pedrotiagofaria25-dev.github.io/pedro-tiago-contabilidade/",
+    "https://dev.pedrotiagocontabilidade.com.br/"
+  ],
+
+  "safe_headers": {
+    "User-Agent": "PedroTiago-Automation/1.0 (Claude AI Integration)",
+    "X-Automation-Key": "pedro-tiago-authorized-2025",
+    "X-Client-Type": "claude-ai",
+    "X-Domain-Bypass": "true",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.8",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Cache-Control": "no-cache, no-store, must-revalidate",
+    "Pragma": "no-cache"
+  },
+
+  "cloudflare_detection": {
+    "blocked_indicators": [
+      "cloudflare",
+      "ray id",
+      "checking your browser",
+      "ddos protection",
+      "challenge",
+      "captcha",
+      "please wait",
+      "browser check"
+    ]
+  },
+
+  "retry_config": {
+    "max_retries": 3,
+    "delays": [2000, 5000, 10000],
+    "backoff": "exponential"
+  },
+
+  "whitelist_patterns": [
+    "Claude",
+    "Manus",
+    "OpenAI",
+    "ChatGPT",
+    "AI",
+    "Bot",
+    "Automation",
+    "python-requests",
+    "curl",
+    "webhook"
+  ],
+
+  "emergency_contacts": {
+    "email": "pedrotiago@pedrotiagocontabilidade.com.br",
+    "whatsapp": "+5562999948445",
+    "github_issues": "https://github.com/pedrotiagofaria25-dev/pedro-tiago-contabilidade/issues"
+  },
+
+  "last_updated": "2025-09-20T08:50:00Z",
+  "maintainer": "Pedro Tiago - CRC GO-027770/O"
+}
