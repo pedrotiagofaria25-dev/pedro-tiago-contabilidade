@@ -2,13 +2,16 @@
 
 ## 🎯 ESTRATÉGIA DE PROTEÇÃO PARA AUTOMAÇÕES
 
-### 📊 ARQUITETURA DE SUBDOMÍNIOS:
+### 📊 ARQUITETURA DE URLs DE BYPASS:
 
 ```
-www.pedrotiagocontabilidade.com.br     → Cloudflare ATIVO (usuários finais)
-api.pedrotiagocontabilidade.com.br     → DIRETO GitHub Pages (Claude Code)
-automation.pedrotiagocontabilidade.com.br → DIRETO GitHub Pages (MANUS/IAs)
-dev.pedrotiagocontabilidade.com.br     → DIRETO GitHub Pages (desenvolvimento)
+URLS PRIMÁRIAS (SEMPRE FUNCIONAM):
+1. https://pedrotiagofaria25-dev.github.io/pedro-tiago-contabilidade/     → GitHub Pages Principal
+2. https://pedrotiagofaria25-dev.github.io/pedro-tiago-api/               → API Endpoint
+3. https://pedrotiagofaria25-dev.github.io/pedro-tiago-automation/        → Automation Endpoint
+
+URLS PÚBLICAS (PODEM TER CLOUDFLARE):
+4. https://www.pedrotiagocontabilidade.com.br/                           → Site Principal
 ```
 
 ## 🔧 CONFIGURAÇÕES OBRIGATÓRIAS PARA CLOUDFLARE:
