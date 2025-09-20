@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Sistema de integração Claude Code para automação contábil - Pedro Tiago Contabilidade",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
